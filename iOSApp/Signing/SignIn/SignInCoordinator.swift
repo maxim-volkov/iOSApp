@@ -1,5 +1,5 @@
 //
-//  SignUpCoordinator.swift
+//  SignInCoordinator.swift
 //  iOSApp
 //
 //  Created by HOGGISH on 11/05/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class SignUpCoordinator: Coordinator {
+final class SignInCoordinator: Coordinator {
     var childCoordinators: [Coordinator] = []
     
     var navigationController: UINavigationController
@@ -17,9 +17,13 @@ final class SignUpCoordinator: Coordinator {
     }
     
     func start() {
-        let ctrl = SignUpViewController()
-        let viewModel = SignUpViewModel(coordinator: self)
+        let ctrl = SignInViewController()
+        let viewModel = SignInViewModel(coordinator: self)
         ctrl.viewModel = viewModel
         navigationController.pushViewController(ctrl, animated: true)
+    }
+    
+    func showHomeScreen() {
+        
     }
 }

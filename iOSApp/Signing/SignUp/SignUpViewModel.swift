@@ -16,4 +16,7 @@ final class SignUpViewModel {
     init(coordinator: Coordinator) {
         self.parentCoordinator = coordinator as! SignUpCoordinator
     }
+    func signUpBtnTapped(email: String?, password: String?, confirmPassword: String?) {
+        parentCoordinator.showHomeScreen()
+    }
 }

@@ -83,6 +83,8 @@
 		1AC52F18264BAAD900C04EA4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B83D555F264B96B3003791F5 /* Customs */,
+				B864B4E4264AE7D30056C356 /* Extensions */,
 				B864B4ED264AF2C50056C356 /* GlobalVariables.swift */,
 				1AC52F19264BAAF000C04EA4 /* Localization.strings */,
 				1AC52F25264BAD9D00C04EA4 /* R.generated.swift */,
@@ -137,15 +139,9 @@
 			isa = PBXGroup;
 			children = (
 				1AC52F18264BAAD900C04EA4 /* Resources */,
-				B83D555F264B96B3003791F5 /* Customs */,
-				B864B4E4264AE7D30056C356 /* Extensions */,
-				B864B4CC264AE2180056C356 /* Welcome */,
-				B864B4CB264AE1EB0056C356 /* SignIn */,
-				B864B4CA264AE04A0056C356 /* SignUp */,
+				B8789406264C3EB6004DEE04 /* Signing */,
 				B864B4EF264AF4B50056C356 /* BaseClasses */,
 				B864B4E1264AE5870056C356 /* SupportFiles */,
-				B864B4BF264AD9D10056C356 /* Assets.xcassets */,
-				B864B4C1264AD9D10056C356 /* LaunchScreen.storyboard */,
 				B864B4C4264AD9D10056C356 /* Info.plist */,
 			);
 			path = iOSApp;
@@ -186,6 +182,8 @@
 			children = (
 				B864B4B6264AD9D00056C356 /* AppDelegate.swift */,
 				B864B4B8264AD9D00056C356 /* SceneDelegate.swift */,
+				B864B4BF264AD9D10056C356 /* Assets.xcassets */,
+				B864B4C1264AD9D10056C356 /* LaunchScreen.storyboard */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -210,6 +208,16 @@
 				B864B4E2264AE5C60056C356 /* BaseViewController.swift */,
 			);
 			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		B8789406264C3EB6004DEE04 /* Signing */ = {
+			isa = PBXGroup;
+			children = (
+				B864B4CC264AE2180056C356 /* Welcome */,
+				B864B4CB264AE1EB0056C356 /* SignIn */,
+				B864B4CA264AE04A0056C356 /* SignUp */,
+			);
+			path = Signing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -1,5 +1,5 @@
 //
-//  SignUpViewController.swift
+//  SignInViewController.swift
 //  iOSApp
 //
 //  Created by HOGGISH on 11/05/21.
@@ -7,17 +7,16 @@
 
 import UIKit
 
-final class SignUpViewController: BaseViewController {
+final class SignInViewController: BaseViewController {
 
-    var viewModel: SignUpViewModel!
+    var viewModel: SignInViewModel!
     private let scrollView = UIScrollView()
     private let stackView = UIStackView(axis: .vertical, distribution: .fillProportionally, spacing: 20)
 
     private let emailTextField = AppTextField(placeholder: RL.emailPhoneNumber())
-    private let passwordTextField = AppTextField(placeholder: RL.password(), isSecureTextEntry:  true)
-    private let confirmPasswordTextField = AppTextField(placeholder: RL.confirmPassword(), isSecureTextEntry: true)
-    private let signInBtn = UIButton.makeButton(title: RL.signUp(), backgroundColor: appBrandColor)
-    
+    private let passwordTextField = AppTextField(placeholder: RL.password(), isSecureTextEntry: true)
+    private let signInBtn = UIButton.makeButton(title: RL.signIn(), backgroundColor: appBrandColor)
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -39,10 +38,11 @@ final class SignUpViewController: BaseViewController {
     }
     private func setupView() {
         title = viewModel.title
+        signInBtn.addTarget(self, action: #selector(signInBtnTapped), for: .touchUpInside)
         view.addSubview(scrollView)
         scrollView.addSubview(stackView)
         stackView.alignment = .fill
-        stackView.addArrangedViews(emailTextField, passwordTextField, confirmPasswordTextField, signInBtn)
+        stackView.addArrangedViews(emailTextField, passwordTextField, signInBtn)
     }
     
     private func setupLayout() {
@@ -54,5 +54,9 @@ final class SignUpViewController: BaseViewController {
             make.top.equalToSuperview().inset(appLargePadding)
             make.leading.width.trailing.equalToSuperview()
         }
+    }
+    
+    @objc private func signInBtnTapped() {
+        viewModel.signInBtnTapped(email: emailTextField.text, password: passwordTextField.text)
     }
 }
