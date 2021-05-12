@@ -1,0 +1,17 @@
+/* 
+  Localization.strings
+  iOSApp
+
+  Created by Jasurbek Shomurodov on 5/12/21.
+  
+*/
+
+//Signing
+"welcomeMsg" = "Welcome";
+"secondWelcomeMsg" = "Build your own social network";
+"createAccount" = "Create new account";
+"emailPhoneNumber" = "E-mail or phone number";
+"password" = "Password";
+"signIn" = "Sign In";
+"signUp" = "Sign Up";
+"confirmPassword" = "Confirm Password";

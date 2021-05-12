@@ -10,10 +10,18 @@ import UIKit
 final class SignUpViewController: BaseViewController {
 
     var viewModel: SignUpViewModel!
+    private let scrollView = UIScrollView()
+    private let stackView = UIStackView(axis: .vertical, distribution: .fillProportionally, spacing: 20)
+
+    private let emailTextField = AppTextField(placeholder: RL.emailPhoneNumber())
+    private let passwordTextField = AppTextField(placeholder: RL.password())
+    private let confirmPasswordTextField = AppTextField(placeholder: RL.confirmPassword())
+    private let signInBtn = UIButton.makeButton(title: RL.signUp(), backgroundColor: appBrandColor)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        setupLayout()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -22,7 +30,6 @@ final class SignUpViewController: BaseViewController {
         let textAttributes = [NSAttributedString.Key.foregroundColor: appBrandColor]
         navigationController?.navigationBar.titleTextAttributes = textAttributes
         navigationController?.navigationBar.largeTitleTextAttributes = textAttributes
-        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -30,8 +37,22 @@ final class SignUpViewController: BaseViewController {
         navigationController?.navigationBar.titleTextAttributes = nil
         navigationController?.navigationBar.largeTitleTextAttributes = nil
     }
-
     private func setupView() {
         title = viewModel.title
+        view.addSubview(scrollView)
+        scrollView.addSubview(stackView)
+        stackView.alignment = .fill
+        stackView.addArrangedViews(emailTextField, passwordTextField, confirmPasswordTextField, signInBtn)
+    }
+    
+    private func setupLayout() {
+        scrollView.snp.makeConstraints { make in
+            make.top.bottom.equalTo(view.safeAreaLayoutGuide)
+            make.leading.trailing.equalToSuperview().inset(appLargePadding)
+        }
+        stackView.snp.makeConstraints { make in
+            make.top.equalToSuperview().inset(appLargePadding)
+            make.leading.width.trailing.equalToSuperview()
+        }
     }
 }

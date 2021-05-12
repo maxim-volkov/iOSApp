@@ -13,9 +13,9 @@ final class SignInViewController: BaseViewController {
     private let scrollView = UIScrollView()
     private let stackView = UIStackView(axis: .vertical, distribution: .fillProportionally, spacing: 20)
 
-    private let emailTextField = AppTextField(placeholder: "E-mail or phone number")
-    private let passwordTextField = AppTextField(placeholder: "Password")
-    private let signInBtn = UIButton.makeButton(title: "Sign In", backgroundColor: appBrandColor)
+    private let emailTextField = AppTextField(placeholder: RL.emailPhoneNumber())
+    private let passwordTextField = AppTextField(placeholder: RL.password())
+    private let signInBtn = UIButton.makeButton(title: RL.signIn(), backgroundColor: appBrandColor)
 
     override func viewDidLoad() {
         super.viewDidLoad()

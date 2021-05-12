@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AC52F1A264BAAF000C04EA4 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AC52F19264BAAF000C04EA4 /* Localization.strings */; };
+		1AC52F26264BAD9D00C04EA4 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC52F25264BAD9D00C04EA4 /* R.generated.swift */; };
 		B83D5561264B96BE003791F5 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83D5560264B96BE003791F5 /* TextField.swift */; };
 		B864B4B7264AD9D00056C356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B864B4B6264AD9D00056C356 /* AppDelegate.swift */; };
 		B864B4B9264AD9D00056C356 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B864B4B8264AD9D00056C356 /* SceneDelegate.swift */; };
@@ -27,7 +29,7 @@
 		B864B4E8264AE91A0056C356 /* UIStackView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B864B4E7264AE91A0056C356 /* UIStackView+extensions.swift */; };
 		B864B4EA264AED940056C356 /* UIButton+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B864B4E9264AED940056C356 /* UIButton+extensions.swift */; };
 		B864B4EC264AEFD20056C356 /* UIImageView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B864B4EB264AEFD20056C356 /* UIImageView+extensions.swift */; };
-		B864B4EE264AF2C50056C356 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B864B4ED264AF2C50056C356 /* constants.swift */; };
+		B864B4EE264AF2C50056C356 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = B864B4ED264AF2C50056C356 /* GlobalVariables.swift */; };
 		B864B4F1264AFE140056C356 /* UITextField+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B864B4F0264AFE140056C356 /* UITextField+extensions.swift */; };
 		B864B4F3264B7D760056C356 /* UIView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B864B4F2264B7D760056C356 /* UIView+extensions.swift */; };
 		D4231EB40E0C1BED55F74D38 /* Pods_iOSApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F51E6CE991B03C5B3F371F /* Pods_iOSApp.framework */; };
@@ -35,6 +37,8 @@
 
 /* Begin PBXFileReference section */
 		0FBC62CE8B78F95F48590B0D /* Pods-iOSApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSApp.debug.xcconfig"; path = "Target Support Files/Pods-iOSApp/Pods-iOSApp.debug.xcconfig"; sourceTree = "<group>"; };
+		1AC52F19264BAAF000C04EA4 /* Localization.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localization.strings; sourceTree = "<group>"; };
+		1AC52F25264BAD9D00C04EA4 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		27BD7AFA66EAEE981A934464 /* Pods-iOSApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSApp.release.xcconfig"; path = "Target Support Files/Pods-iOSApp/Pods-iOSApp.release.xcconfig"; sourceTree = "<group>"; };
 		83F51E6CE991B03C5B3F371F /* Pods_iOSApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83D5560264B96BE003791F5 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
@@ -59,7 +63,7 @@
 		B864B4E7264AE91A0056C356 /* UIStackView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+extensions.swift"; sourceTree = "<group>"; };
 		B864B4E9264AED940056C356 /* UIButton+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+extensions.swift"; sourceTree = "<group>"; };
 		B864B4EB264AEFD20056C356 /* UIImageView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+extensions.swift"; sourceTree = "<group>"; };
-		B864B4ED264AF2C50056C356 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		B864B4ED264AF2C50056C356 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		B864B4F0264AFE140056C356 /* UITextField+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+extensions.swift"; sourceTree = "<group>"; };
 		B864B4F2264B7D760056C356 /* UIView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +80,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AC52F18264BAAD900C04EA4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B864B4ED264AF2C50056C356 /* GlobalVariables.swift */,
+				1AC52F19264BAAF000C04EA4 /* Localization.strings */,
+				1AC52F25264BAD9D00C04EA4 /* R.generated.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		3D8A64480FC425EDA3CEE37B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +136,7 @@
 		B864B4B5264AD9D00056C356 /* iOSApp */ = {
 			isa = PBXGroup;
 			children = (
+				1AC52F18264BAAD900C04EA4 /* Resources */,
 				B83D555F264B96B3003791F5 /* Customs */,
 				B864B4E4264AE7D30056C356 /* Extensions */,
 				B864B4CC264AE2180056C356 /* Welcome */,
@@ -132,7 +147,6 @@
 				B864B4BF264AD9D10056C356 /* Assets.xcassets */,
 				B864B4C1264AD9D10056C356 /* LaunchScreen.storyboard */,
 				B864B4C4264AD9D10056C356 /* Info.plist */,
-				B864B4ED264AF2C50056C356 /* constants.swift */,
 			);
 			path = iOSApp;
 			sourceTree = "<group>";
@@ -206,6 +220,7 @@
 			buildConfigurationList = B864B4C7264AD9D10056C356 /* Build configuration list for PBXNativeTarget "iOSApp" */;
 			buildPhases = (
 				1270C3077F5C279FA7C188A6 /* [CP] Check Pods Manifest.lock */,
+				1AC52F22264BAC5000C04EA4 /* RSwift */,
 				B864B4AF264AD9D00056C356 /* Sources */,
 				B864B4B0264AD9D00056C356 /* Frameworks */,
 				B864B4B1264AD9D00056C356 /* Resources */,
@@ -258,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B864B4C3264AD9D10056C356 /* LaunchScreen.storyboard in Resources */,
+				1AC52F1A264BAAF000C04EA4 /* Localization.strings in Resources */,
 				B864B4C0264AD9D10056C356 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +302,26 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		1AC52F22264BAC5000C04EA4 /* RSwift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = RSwift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
 		};
 		E88712BB059F7AD655EE5E19 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -320,12 +356,13 @@
 				B864B4DC264AE32D0056C356 /* WelcomeViewController.swift in Sources */,
 				B864B4F3264B7D760056C356 /* UIView+extensions.swift in Sources */,
 				B864B4EC264AEFD20056C356 /* UIImageView+extensions.swift in Sources */,
+				1AC52F26264BAD9D00C04EA4 /* R.generated.swift in Sources */,
 				B864B4E6264AE7E20056C356 /* UILabel+extensions.swift in Sources */,
 				B864B4B7264AD9D00056C356 /* AppDelegate.swift in Sources */,
 				B864B4B9264AD9D00056C356 /* SceneDelegate.swift in Sources */,
 				B864B4D6264AE2900056C356 /* SignInViewController.swift in Sources */,
 				B864B4EA264AED940056C356 /* UIButton+extensions.swift in Sources */,
-				B864B4EE264AF2C50056C356 /* constants.swift in Sources */,
+				B864B4EE264AF2C50056C356 /* GlobalVariables.swift in Sources */,
 				B864B4D8264AE29B0056C356 /* SignInViewModel.swift in Sources */,
 				B864B4D4264AE2870056C356 /* SignInCoordinator.swift in Sources */,
 				B864B4E0264AE3B80056C356 /* Coordinator.swift in Sources */,

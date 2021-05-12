@@ -7,5 +7,5 @@ target 'iOSApp' do
 
   # Pods for iOSApp
 pod 'SnapKit'
-
+pod 'R.swift'
 end

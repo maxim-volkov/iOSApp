@@ -9,7 +9,7 @@ import Foundation
 
 final class SignUpViewModel {
     
-    private(set) var title = "Sign Up"
+    private(set) var title = RL.createAccount()
     
     private let parentCoordinator: SignUpCoordinator
     

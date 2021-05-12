@@ -13,7 +13,6 @@ extension UIImageView {
         self.init(frame: .zero)
         self.image = image
         self.contentMode = contentMode
-        sizeThatFits(CGSize(width: 100, height: 100))
     }
     
 }

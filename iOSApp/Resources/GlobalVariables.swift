@@ -16,6 +16,8 @@ let appPadding = 12
 let appLargePadding = 24
 let appBtnHeight = 44
 
+let RL = R.string.localization.self
+
 func appBoldFont(size: CGFloat) -> UIFont {
     return .systemFont(ofSize: size, weight: .medium)
 }

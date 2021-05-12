@@ -14,10 +14,10 @@ class WelcomeViewController: BaseViewController {
     
     private let stackView = UIStackView(axis: .vertical, distribution: .fillProportionally, spacing: 20)
     private let logoImageView = UIImageView(image: UIImage(systemName: "network"), contentMode: .scaleAspectFit)
-    private let welcomeLabel = UILabel.makeLabel("Welcome to our app", font: .systemFont(ofSize: 35, weight: .bold), color: appBrandColor, textAligment: .center)
-    private let buildYourOwnSocial = UILabel.makeLabel("Build your own social network", font: .systemFont(ofSize: 24), textAligment: .center)
-    private let loginBtn = UIButton.makeButton(title: "Sign In", backgroundColor: appBrandColor)
-    private let signUpBtn = UIButton.makeButton(title: "Sign Up", backgroundColor: .clear, borderColor: appBrandColor)
+    private let welcomeLabel = UILabel.makeLabel(RL.welcomeMsg(), font: .systemFont(ofSize: 35, weight: .bold), color: appBrandColor, textAligment: .center)
+    private let buildYourOwnSocial = UILabel.makeLabel(RL.secondWelcomeMsg(), font: .systemFont(ofSize: 24), textAligment: .center)
+    private let loginBtn = UIButton.makeButton(title: RL.signIn(), backgroundColor: appBrandColor)
+    private let signUpBtn = UIButton.makeButton(title: RL.signUp(), backgroundColor: .clear, borderColor: appBrandColor)
 
     override func viewDidLoad() {
         super.viewDidLoad()
