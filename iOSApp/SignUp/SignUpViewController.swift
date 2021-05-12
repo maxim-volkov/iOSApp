@@ -14,8 +14,8 @@ final class SignUpViewController: BaseViewController {
     private let stackView = UIStackView(axis: .vertical, distribution: .fillProportionally, spacing: 20)
 
     private let emailTextField = AppTextField(placeholder: RL.emailPhoneNumber())
-    private let passwordTextField = AppTextField(placeholder: RL.password())
-    private let confirmPasswordTextField = AppTextField(placeholder: RL.confirmPassword())
+    private let passwordTextField = AppTextField(placeholder: RL.password(), isSecureTextEntry:  true)
+    private let confirmPasswordTextField = AppTextField(placeholder: RL.confirmPassword(), isSecureTextEntry: true)
     private let signInBtn = UIButton.makeButton(title: RL.signUp(), backgroundColor: appBrandColor)
     
     override func viewDidLoad() {
