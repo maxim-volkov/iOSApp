@@ -6,5 +6,6 @@ target 'iOSApp' do
   use_frameworks!
 
   # Pods for iOSApp
+pod 'SnapKit'
 
 end
