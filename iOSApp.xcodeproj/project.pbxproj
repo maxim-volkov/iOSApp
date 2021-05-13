@@ -53,6 +53,9 @@
 		B8789457264D724A004DEE04 /* AddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8789456264D724A004DEE04 /* AddViewModel.swift */; };
 		B8789459264D724F004DEE04 /* AddCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8789458264D724F004DEE04 /* AddCoordinator.swift */; };
 		B878945B264D7256004DEE04 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B878945A264D7256004DEE04 /* AddViewController.swift */; };
+		B878945E264D7C86004DEE04 /* FollowingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B878945D264D7C86004DEE04 /* FollowingLabel.swift */; };
+		B8789460264D7D30004DEE04 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B878945F264D7D30004DEE04 /* RoundedImageView.swift */; };
+		B8789463264D894A004DEE04 /* AccountHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8789462264D894A004DEE04 /* AccountHorizontalView.swift */; };
 		D4231EB40E0C1BED55F74D38 /* Pods_iOSApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F51E6CE991B03C5B3F371F /* Pods_iOSApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +111,9 @@
 		B8789456264D724A004DEE04 /* AddViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewModel.swift; sourceTree = "<group>"; };
 		B8789458264D724F004DEE04 /* AddCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoordinator.swift; sourceTree = "<group>"; };
 		B878945A264D7256004DEE04 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		B878945D264D7C86004DEE04 /* FollowingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingLabel.swift; sourceTree = "<group>"; };
+		B878945F264D7D30004DEE04 /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		B8789462264D894A004DEE04 /* AccountHorizontalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHorizontalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				B83D5560264B96BE003791F5 /* TextField.swift */,
+				B878945F264D7D30004DEE04 /* RoundedImageView.swift */,
 			);
 			path = Customs;
 			sourceTree = "<group>";
@@ -315,6 +322,7 @@
 				B8789445264D5EA7004DEE04 /* AccountViewController.swift */,
 				B8789447264D5EAF004DEE04 /* AccountViewModel.swift */,
 				B8789449264D5EB7004DEE04 /* AccountCoordinator.swift */,
+				B8789461264D8936004DEE04 /* Views */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -337,6 +345,15 @@
 				B878945A264D7256004DEE04 /* AddViewController.swift */,
 			);
 			path = Add;
+			sourceTree = "<group>";
+		};
+		B8789461264D8936004DEE04 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B878945D264D7C86004DEE04 /* FollowingLabel.swift */,
+				B8789462264D894A004DEE04 /* AccountHorizontalView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -474,6 +491,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B878945E264D7C86004DEE04 /* FollowingLabel.swift in Sources */,
 				B8789457264D724A004DEE04 /* AddViewModel.swift in Sources */,
 				B8789421264D323A004DEE04 /* SearchViewModel.swift in Sources */,
 				B8789448264D5EAF004DEE04 /* AccountViewModel.swift in Sources */,
@@ -499,6 +517,7 @@
 				1AC52F26264BAD9D00C04EA4 /* R.generated.swift in Sources */,
 				B864B4E6264AE7E20056C356 /* UILabel+extensions.swift in Sources */,
 				B864B4B7264AD9D00056C356 /* AppDelegate.swift in Sources */,
+				B8789460264D7D30004DEE04 /* RoundedImageView.swift in Sources */,
 				B864B4B9264AD9D00056C356 /* SceneDelegate.swift in Sources */,
 				B8789418264D31C4004DEE04 /* TabBarViewModel.swift in Sources */,
 				B864B4D6264AE2900056C356 /* SignInViewController.swift in Sources */,
@@ -515,6 +534,7 @@
 				B878944A264D5EB7004DEE04 /* AccountCoordinator.swift in Sources */,
 				B864B4D2264AE2770056C356 /* SignUpViewModel.swift in Sources */,
 				B878941A264D31D9004DEE04 /* TabBarViewController.swift in Sources */,
+				B8789463264D894A004DEE04 /* AccountHorizontalView.swift in Sources */,
 				B864B4D0264AE26D0056C356 /* SignUpViewController.swift in Sources */,
 				B8789451264D6018004DEE04 /* FavoriteCoordinator.swift in Sources */,
 			);
