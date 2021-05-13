@@ -24,6 +24,6 @@ final class SignUpCoordinator: Coordinator {
     }
     
     func showHomeScreen() {
-        
+        SettingsManager.shared.user = .authenticated
     }
 }

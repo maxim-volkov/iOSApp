@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class WelcomeViewModel: BaseViewModel {
+final class WelcomeViewModel {
         
     private let parentCoordinator: WelcomeCoordinator
     

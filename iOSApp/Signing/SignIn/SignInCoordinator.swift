@@ -24,6 +24,7 @@ final class SignInCoordinator: Coordinator {
     }
     
     func showHomeScreen() {
-        
+//        let coordinator = HomeCoordinator()
+//        childCoordinators.append(coordinator)
     }
 }

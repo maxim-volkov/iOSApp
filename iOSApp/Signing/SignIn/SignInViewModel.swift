@@ -9,7 +9,7 @@ import Foundation
 
 final class SignInViewModel {
     
-    private(set) var title = "Sign In"
+    private(set) var title: String = RL.signIn()
     
     private let parentCoordinator: SignInCoordinator
     

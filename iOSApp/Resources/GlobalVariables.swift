@@ -9,8 +9,10 @@ import UIKit
 
 
 
-let appBrandColor = UIColor.purple
+let appBrandColor = UIColor(hex: "#ff0C8EFF")!
 let appBlackColor = UIColor.black
+let appWhiteColor = UIColor(hex: "#ffF9F9F9")
+let appDarkColor = UIColor(r: 34, g: 38, b: 47)
 
 let appPadding = 12
 let appLargePadding = 24

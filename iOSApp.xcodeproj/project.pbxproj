@@ -32,6 +32,24 @@
 		B864B4EE264AF2C50056C356 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = B864B4ED264AF2C50056C356 /* GlobalVariables.swift */; };
 		B864B4F1264AFE140056C356 /* UITextField+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B864B4F0264AFE140056C356 /* UITextField+extensions.swift */; };
 		B864B4F3264B7D760056C356 /* UIView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B864B4F2264B7D760056C356 /* UIView+extensions.swift */; };
+		B878940A264C3F7A004DEE04 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8789409264C3F7A004DEE04 /* HomeViewModel.swift */; };
+		B878940C264C3F83004DEE04 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B878940B264C3F83004DEE04 /* HomeCoordinator.swift */; };
+		B878940E264C3F8A004DEE04 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B878940D264C3F8A004DEE04 /* HomeViewController.swift */; };
+		B8789411264D00D2004DEE04 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8789410264D00D2004DEE04 /* TabBarCoordinator.swift */; };
+		B8789414264D0179004DEE04 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8789413264D0179004DEE04 /* AppCoordinator.swift */; };
+		B8789416264D01BE004DEE04 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8789415264D01BE004DEE04 /* SettingsManager.swift */; };
+		B8789418264D31C4004DEE04 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8789417264D31C4004DEE04 /* TabBarViewModel.swift */; };
+		B878941A264D31D9004DEE04 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8789419264D31D9004DEE04 /* TabBarViewController.swift */; };
+		B878941D264D322A004DEE04 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B878941C264D322A004DEE04 /* SearchViewController.swift */; };
+		B878941F264D3232004DEE04 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B878941E264D3232004DEE04 /* SearchCoordinator.swift */; };
+		B8789421264D323A004DEE04 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8789420264D323A004DEE04 /* SearchViewModel.swift */; };
+		B8789446264D5EA7004DEE04 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8789445264D5EA7004DEE04 /* AccountViewController.swift */; };
+		B8789448264D5EAF004DEE04 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8789447264D5EAF004DEE04 /* AccountViewModel.swift */; };
+		B878944A264D5EB7004DEE04 /* AccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8789449264D5EB7004DEE04 /* AccountCoordinator.swift */; };
+		B878944D264D6008004DEE04 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B878944C264D6008004DEE04 /* FavoriteViewController.swift */; };
+		B878944F264D6011004DEE04 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B878944E264D6011004DEE04 /* FavoriteViewModel.swift */; };
+		B8789451264D6018004DEE04 /* FavoriteCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8789450264D6018004DEE04 /* FavoriteCoordinator.swift */; };
+		B8789453264D6A38004DEE04 /* UIColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8789452264D6A38004DEE04 /* UIColor+extensions.swift */; };
 		D4231EB40E0C1BED55F74D38 /* Pods_iOSApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F51E6CE991B03C5B3F371F /* Pods_iOSApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +84,24 @@
 		B864B4ED264AF2C50056C356 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		B864B4F0264AFE140056C356 /* UITextField+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+extensions.swift"; sourceTree = "<group>"; };
 		B864B4F2264B7D760056C356 /* UIView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extensions.swift"; sourceTree = "<group>"; };
+		B8789409264C3F7A004DEE04 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B878940B264C3F83004DEE04 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		B878940D264C3F8A004DEE04 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B8789410264D00D2004DEE04 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		B8789413264D0179004DEE04 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		B8789415264D01BE004DEE04 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		B8789417264D31C4004DEE04 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
+		B8789419264D31D9004DEE04 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		B878941C264D322A004DEE04 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		B878941E264D3232004DEE04 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		B8789420264D323A004DEE04 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		B8789445264D5EA7004DEE04 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		B8789447264D5EAF004DEE04 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		B8789449264D5EB7004DEE04 /* AccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCoordinator.swift; sourceTree = "<group>"; };
+		B878944C264D6008004DEE04 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		B878944E264D6011004DEE04 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
+		B8789450264D6018004DEE04 /* FavoriteCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCoordinator.swift; sourceTree = "<group>"; };
+		B8789452264D6A38004DEE04 /* UIColor+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +124,7 @@
 				B864B4ED264AF2C50056C356 /* GlobalVariables.swift */,
 				1AC52F19264BAAF000C04EA4 /* Localization.strings */,
 				1AC52F25264BAD9D00C04EA4 /* R.generated.swift */,
+				B8789415264D01BE004DEE04 /* SettingsManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -139,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				1AC52F18264BAAD900C04EA4 /* Resources */,
+				B8789407264C3F5C004DEE04 /* Main */,
 				B8789406264C3EB6004DEE04 /* Signing */,
 				B864B4EF264AF4B50056C356 /* BaseClasses */,
 				B864B4E1264AE5870056C356 /* SupportFiles */,
@@ -197,6 +235,7 @@
 				B864B4EB264AEFD20056C356 /* UIImageView+extensions.swift */,
 				B864B4F0264AFE140056C356 /* UITextField+extensions.swift */,
 				B864B4F2264B7D760056C356 /* UIView+extensions.swift */,
+				B8789452264D6A38004DEE04 /* UIColor+extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -206,6 +245,7 @@
 			children = (
 				B864B4DF264AE3B80056C356 /* Coordinator.swift */,
 				B864B4E2264AE5C60056C356 /* BaseViewController.swift */,
+				B8789413264D0179004DEE04 /* AppCoordinator.swift */,
 			);
 			path = BaseClasses;
 			sourceTree = "<group>";
@@ -218,6 +258,68 @@
 				B864B4CA264AE04A0056C356 /* SignUp */,
 			);
 			path = Signing;
+			sourceTree = "<group>";
+		};
+		B8789407264C3F5C004DEE04 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B878944B264D5FFC004DEE04 /* Favorite */,
+				B8789444264D5E97004DEE04 /* Account */,
+				B878941B264D321D004DEE04 /* Search */,
+				B878940F264D006E004DEE04 /* TabBar */,
+				B8789408264C3F67004DEE04 /* Home */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B8789408264C3F67004DEE04 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B878940B264C3F83004DEE04 /* HomeCoordinator.swift */,
+				B8789409264C3F7A004DEE04 /* HomeViewModel.swift */,
+				B878940D264C3F8A004DEE04 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B878940F264D006E004DEE04 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				B8789410264D00D2004DEE04 /* TabBarCoordinator.swift */,
+				B8789417264D31C4004DEE04 /* TabBarViewModel.swift */,
+				B8789419264D31D9004DEE04 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		B878941B264D321D004DEE04 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				B878941C264D322A004DEE04 /* SearchViewController.swift */,
+				B878941E264D3232004DEE04 /* SearchCoordinator.swift */,
+				B8789420264D323A004DEE04 /* SearchViewModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		B8789444264D5E97004DEE04 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				B8789445264D5EA7004DEE04 /* AccountViewController.swift */,
+				B8789447264D5EAF004DEE04 /* AccountViewModel.swift */,
+				B8789449264D5EB7004DEE04 /* AccountCoordinator.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		B878944B264D5FFC004DEE04 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				B878944C264D6008004DEE04 /* FavoriteViewController.swift */,
+				B878944E264D6011004DEE04 /* FavoriteViewModel.swift */,
+				B8789450264D6018004DEE04 /* FavoriteCoordinator.swift */,
+			);
+			path = Favorite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,12 +457,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8789421264D323A004DEE04 /* SearchViewModel.swift in Sources */,
+				B8789448264D5EAF004DEE04 /* AccountViewModel.swift in Sources */,
+				B878940E264C3F8A004DEE04 /* HomeViewController.swift in Sources */,
 				B864B4F1264AFE140056C356 /* UITextField+extensions.swift in Sources */,
 				B864B4E8264AE91A0056C356 /* UIStackView+extensions.swift in Sources */,
 				B864B4E3264AE5C60056C356 /* BaseViewController.swift in Sources */,
 				B83D5561264B96BE003791F5 /* TextField.swift in Sources */,
 				B864B4CE264AE2630056C356 /* SignUpCoordinator.swift in Sources */,
+				B878944D264D6008004DEE04 /* FavoriteViewController.swift in Sources */,
+				B8789414264D0179004DEE04 /* AppCoordinator.swift in Sources */,
+				B8789446264D5EA7004DEE04 /* AccountViewController.swift in Sources */,
+				B878941D264D322A004DEE04 /* SearchViewController.swift in Sources */,
+				B8789411264D00D2004DEE04 /* TabBarCoordinator.swift in Sources */,
+				B878940C264C3F83004DEE04 /* HomeCoordinator.swift in Sources */,
+				B878940A264C3F7A004DEE04 /* HomeViewModel.swift in Sources */,
 				B864B4DE264AE3350056C356 /* WelcomeViewModel.swift in Sources */,
+				B878941F264D3232004DEE04 /* SearchCoordinator.swift in Sources */,
 				B864B4DC264AE32D0056C356 /* WelcomeViewController.swift in Sources */,
 				B864B4F3264B7D760056C356 /* UIView+extensions.swift in Sources */,
 				B864B4EC264AEFD20056C356 /* UIImageView+extensions.swift in Sources */,
@@ -368,15 +481,22 @@
 				B864B4E6264AE7E20056C356 /* UILabel+extensions.swift in Sources */,
 				B864B4B7264AD9D00056C356 /* AppDelegate.swift in Sources */,
 				B864B4B9264AD9D00056C356 /* SceneDelegate.swift in Sources */,
+				B8789418264D31C4004DEE04 /* TabBarViewModel.swift in Sources */,
 				B864B4D6264AE2900056C356 /* SignInViewController.swift in Sources */,
+				B878944F264D6011004DEE04 /* FavoriteViewModel.swift in Sources */,
+				B8789453264D6A38004DEE04 /* UIColor+extensions.swift in Sources */,
 				B864B4EA264AED940056C356 /* UIButton+extensions.swift in Sources */,
 				B864B4EE264AF2C50056C356 /* GlobalVariables.swift in Sources */,
 				B864B4D8264AE29B0056C356 /* SignInViewModel.swift in Sources */,
 				B864B4D4264AE2870056C356 /* SignInCoordinator.swift in Sources */,
 				B864B4E0264AE3B80056C356 /* Coordinator.swift in Sources */,
+				B8789416264D01BE004DEE04 /* SettingsManager.swift in Sources */,
 				B864B4DA264AE3240056C356 /* WelcomeCoordinator.swift in Sources */,
+				B878944A264D5EB7004DEE04 /* AccountCoordinator.swift in Sources */,
 				B864B4D2264AE2770056C356 /* SignUpViewModel.swift in Sources */,
+				B878941A264D31D9004DEE04 /* TabBarViewController.swift in Sources */,
 				B864B4D0264AE26D0056C356 /* SignUpViewController.swift in Sources */,
+				B8789451264D6018004DEE04 /* FavoriteCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

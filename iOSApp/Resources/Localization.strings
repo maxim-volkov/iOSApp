@@ -15,3 +15,14 @@
 "signIn" = "Sign In";
 "signUp" = "Sign Up";
 "confirmPassword" = "Confirm Password";
+//Home
+"appName" = "HOGGISH";
+
+//Search
+"search" = "Search";
+
+//Favorite
+"favorite" = "Activity";
+
+//Account
+"account" = "Account";
