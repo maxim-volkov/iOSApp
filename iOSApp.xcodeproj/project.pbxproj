@@ -50,6 +50,9 @@
 		B878944F264D6011004DEE04 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B878944E264D6011004DEE04 /* FavoriteViewModel.swift */; };
 		B8789451264D6018004DEE04 /* FavoriteCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8789450264D6018004DEE04 /* FavoriteCoordinator.swift */; };
 		B8789453264D6A38004DEE04 /* UIColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8789452264D6A38004DEE04 /* UIColor+extensions.swift */; };
+		B8789457264D724A004DEE04 /* AddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8789456264D724A004DEE04 /* AddViewModel.swift */; };
+		B8789459264D724F004DEE04 /* AddCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8789458264D724F004DEE04 /* AddCoordinator.swift */; };
+		B878945B264D7256004DEE04 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B878945A264D7256004DEE04 /* AddViewController.swift */; };
 		D4231EB40E0C1BED55F74D38 /* Pods_iOSApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F51E6CE991B03C5B3F371F /* Pods_iOSApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +105,9 @@
 		B878944E264D6011004DEE04 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 		B8789450264D6018004DEE04 /* FavoriteCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCoordinator.swift; sourceTree = "<group>"; };
 		B8789452264D6A38004DEE04 /* UIColor+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extensions.swift"; sourceTree = "<group>"; };
+		B8789456264D724A004DEE04 /* AddViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewModel.swift; sourceTree = "<group>"; };
+		B8789458264D724F004DEE04 /* AddCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoordinator.swift; sourceTree = "<group>"; };
+		B878945A264D7256004DEE04 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +269,7 @@
 		B8789407264C3F5C004DEE04 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				B8789454264D7237004DEE04 /* Add */,
 				B878944B264D5FFC004DEE04 /* Favorite */,
 				B8789444264D5E97004DEE04 /* Account */,
 				B878941B264D321D004DEE04 /* Search */,
@@ -320,6 +327,16 @@
 				B8789450264D6018004DEE04 /* FavoriteCoordinator.swift */,
 			);
 			path = Favorite;
+			sourceTree = "<group>";
+		};
+		B8789454264D7237004DEE04 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				B8789456264D724A004DEE04 /* AddViewModel.swift */,
+				B8789458264D724F004DEE04 /* AddCoordinator.swift */,
+				B878945A264D7256004DEE04 /* AddViewController.swift */,
+			);
+			path = Add;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,6 +474,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8789457264D724A004DEE04 /* AddViewModel.swift in Sources */,
 				B8789421264D323A004DEE04 /* SearchViewModel.swift in Sources */,
 				B8789448264D5EAF004DEE04 /* AccountViewModel.swift in Sources */,
 				B878940E264C3F8A004DEE04 /* HomeViewController.swift in Sources */,
@@ -476,6 +494,7 @@
 				B878941F264D3232004DEE04 /* SearchCoordinator.swift in Sources */,
 				B864B4DC264AE32D0056C356 /* WelcomeViewController.swift in Sources */,
 				B864B4F3264B7D760056C356 /* UIView+extensions.swift in Sources */,
+				B8789459264D724F004DEE04 /* AddCoordinator.swift in Sources */,
 				B864B4EC264AEFD20056C356 /* UIImageView+extensions.swift in Sources */,
 				1AC52F26264BAD9D00C04EA4 /* R.generated.swift in Sources */,
 				B864B4E6264AE7E20056C356 /* UILabel+extensions.swift in Sources */,
@@ -487,6 +506,7 @@
 				B8789453264D6A38004DEE04 /* UIColor+extensions.swift in Sources */,
 				B864B4EA264AED940056C356 /* UIButton+extensions.swift in Sources */,
 				B864B4EE264AF2C50056C356 /* GlobalVariables.swift in Sources */,
+				B878945B264D7256004DEE04 /* AddViewController.swift in Sources */,
 				B864B4D8264AE29B0056C356 /* SignInViewModel.swift in Sources */,
 				B864B4D4264AE2870056C356 /* SignInCoordinator.swift in Sources */,
 				B864B4E0264AE3B80056C356 /* Coordinator.swift in Sources */,
