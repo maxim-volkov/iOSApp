@@ -14,6 +14,7 @@ class BaseViewController: UIViewController {
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.standardAppearance.backgroundColor = .systemBackground
         navigationController?.navigationBar.standardAppearance.shadowColor = .clear
+        navigationController?.navigationBar.tintColor = appDarkColor
     }
     
     
