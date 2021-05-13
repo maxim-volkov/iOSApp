@@ -13,9 +13,8 @@ final class TabBarViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tabBar.standardAppearance.backgroundColor = .white
-        tabBar.standardAppearance.shadowColor = .clear
         tabBar.tintColor = appDarkColor
+        tabBar.barTintColor = appWhiteColor
         tabBar.layer.masksToBounds = true
         tabBar.barStyle = .default
         tabBar.layer.cornerRadius = 25
