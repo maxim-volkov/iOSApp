@@ -67,7 +67,6 @@ extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.identifier) as! HomeTableViewCell
-        print(indexPath.row % 2)
         cell.postImage = indexPath.row % 2 == 0 ? RoundedImageView(image: R.image.profileImage(), cornerRadius: 30, needBorder: false) : RoundedImageView(image: R.image.kitten(), cornerRadius: 30, needBorder: false)
         cell.cellInteraction = HomeCellInteractionView(likes: "7.2K", comments: "241")
         return cell
