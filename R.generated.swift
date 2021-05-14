@@ -130,10 +130,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 2 images.
+  /// This `R.image` struct is generated, and contains static references to 3 images.
   struct image {
     /// Image `kitten`.
     static let kitten = Rswift.ImageResource(bundle: R.hostingBundle, name: "kitten")
+    /// Image `profileImage1`.
+    static let profileImage1 = Rswift.ImageResource(bundle: R.hostingBundle, name: "profileImage1")
     /// Image `profileImage`.
     static let profileImage = Rswift.ImageResource(bundle: R.hostingBundle, name: "profileImage")
 
@@ -148,6 +150,13 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "profileImage", bundle: ..., traitCollection: ...)`
     static func profileImage(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.profileImage, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "profileImage1", bundle: ..., traitCollection: ...)`
+    static func profileImage1(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.profileImage1, compatibleWith: traitCollection)
     }
     #endif
 
@@ -200,8 +209,6 @@ struct R: Rswift.Validatable {
       static let createAccount = Rswift.StringResource(key: "createAccount", tableName: "Localization", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: E-mail or phone number
       static let emailPhoneNumber = Rswift.StringResource(key: "emailPhoneNumber", tableName: "Localization", bundle: R.hostingBundle, locales: [], comment: nil)
-      /// Value: HOGGISH
-      static let appName = Rswift.StringResource(key: "appName", tableName: "Localization", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Password
       static let password = Rswift.StringResource(key: "password", tableName: "Localization", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Search
@@ -210,6 +217,8 @@ struct R: Rswift.Validatable {
       static let signIn = Rswift.StringResource(key: "signIn", tableName: "Localization", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Sign Up
       static let signUp = Rswift.StringResource(key: "signUp", tableName: "Localization", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Social Network
+      static let appName = Rswift.StringResource(key: "appName", tableName: "Localization", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Welcome
       static let welcomeMsg = Rswift.StringResource(key: "welcomeMsg", tableName: "Localization", bundle: R.hostingBundle, locales: [], comment: nil)
 
@@ -291,19 +300,6 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("emailPhoneNumber", tableName: "Localization", bundle: bundle, comment: "")
       }
 
-      /// Value: HOGGISH
-      static func appName(preferredLanguages: [String]? = nil) -> String {
-        guard let preferredLanguages = preferredLanguages else {
-          return NSLocalizedString("appName", tableName: "Localization", bundle: hostingBundle, comment: "")
-        }
-
-        guard let (_, bundle) = localeBundle(tableName: "Localization", preferredLanguages: preferredLanguages) else {
-          return "appName"
-        }
-
-        return NSLocalizedString("appName", tableName: "Localization", bundle: bundle, comment: "")
-      }
-
       /// Value: Password
       static func password(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
@@ -354,6 +350,19 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("signUp", tableName: "Localization", bundle: bundle, comment: "")
+      }
+
+      /// Value: Social Network
+      static func appName(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("appName", tableName: "Localization", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localization", preferredLanguages: preferredLanguages) else {
+          return "appName"
+        }
+
+        return NSLocalizedString("appName", tableName: "Localization", bundle: bundle, comment: "")
       }
 
       /// Value: Welcome

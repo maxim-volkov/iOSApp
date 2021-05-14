@@ -16,7 +16,7 @@ final class AccountHorizontalView: UIStackView {
     private let followingLabel: FollowingLabel
         
     init(postsModel: TitleSubtitleModel, followerModel: TitleSubtitleModel, followingModel: TitleSubtitleModel) {
-        imageView = RoundedImageView(image: R.image.kitten())
+        imageView = RoundedImageView(image: R.image.kitten(), cornerRadius: 30)
         postsLabel = FollowingLabel(postsModel)
         followersLabel = FollowingLabel(followerModel)
         followingLabel = FollowingLabel(followingModel)

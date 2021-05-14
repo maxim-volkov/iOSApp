@@ -9,22 +9,19 @@ import UIKit
 
 final class RoundedImageView:  UIImageView {
     
-    override init(image: UIImage?) {
+    init(image: UIImage?, cornerRadius: CGFloat = 10, needBorder: Bool = true, contentMode: UIView.ContentMode = .scaleToFill) {
         super.init(frame: .zero)
         self.image = image
-        self.contentMode = .scaleToFill
-        self.layer.borderColor = appBrandColor.cgColor
-        self.layer.borderWidth = 2
+        self.contentMode = contentMode
+        self.layer.cornerRadius = cornerRadius
+        if needBorder {
+            self.layer.borderColor = appBrandColor.cgColor
+            self.layer.borderWidth = 2
+        }
         self.clipsToBounds = true
     }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        self.layer.cornerRadius = frame.width / 3
-    }
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
-
-

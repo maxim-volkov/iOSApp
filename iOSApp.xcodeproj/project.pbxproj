@@ -56,6 +56,12 @@
 		B878945E264D7C86004DEE04 /* FollowingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B878945D264D7C86004DEE04 /* FollowingLabel.swift */; };
 		B8789460264D7D30004DEE04 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B878945F264D7D30004DEE04 /* RoundedImageView.swift */; };
 		B8789463264D894A004DEE04 /* AccountHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8789462264D894A004DEE04 /* AccountHorizontalView.swift */; };
+		B8789468264D998B004DEE04 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8789467264D998B004DEE04 /* HomeTableViewCell.swift */; };
+		B878946A264DA14A004DEE04 /* HomeTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8789469264DA14A004DEE04 /* HomeTableViewCellViewModel.swift */; };
+		B878946C264DA157004DEE04 /* HomeTableViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B878946B264DA157004DEE04 /* HomeTableViewCoordinator.swift */; };
+		B8789470264DA32D004DEE04 /* HomeCellInteractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B878946F264DA32D004DEE04 /* HomeCellInteractionView.swift */; };
+		B8789473264DAEAD004DEE04 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8789472264DAEAD004DEE04 /* HomeHeaderView.swift */; };
+		B8789476264DB289004DEE04 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8789475264DB289004DEE04 /* HomeCollectionViewCell.swift */; };
 		D4231EB40E0C1BED55F74D38 /* Pods_iOSApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F51E6CE991B03C5B3F371F /* Pods_iOSApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +120,12 @@
 		B878945D264D7C86004DEE04 /* FollowingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingLabel.swift; sourceTree = "<group>"; };
 		B878945F264D7D30004DEE04 /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
 		B8789462264D894A004DEE04 /* AccountHorizontalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHorizontalView.swift; sourceTree = "<group>"; };
+		B8789467264D998B004DEE04 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		B8789469264DA14A004DEE04 /* HomeTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		B878946B264DA157004DEE04 /* HomeTableViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCoordinator.swift; sourceTree = "<group>"; };
+		B878946F264DA32D004DEE04 /* HomeCellInteractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellInteractionView.swift; sourceTree = "<group>"; };
+		B8789472264DAEAD004DEE04 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		B8789475264DB289004DEE04 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,9 +301,11 @@
 		B8789408264C3F67004DEE04 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B8789471264DAE9A004DEE04 /* HeaderView */,
 				B878940B264C3F83004DEE04 /* HomeCoordinator.swift */,
 				B8789409264C3F7A004DEE04 /* HomeViewModel.swift */,
 				B878940D264C3F8A004DEE04 /* HomeViewController.swift */,
+				B8789466264D98B2004DEE04 /* Cells */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -354,6 +368,42 @@
 				B8789462264D894A004DEE04 /* AccountHorizontalView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B8789466264D98B2004DEE04 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B878946E264DA306004DEE04 /* Views */,
+				B8789467264D998B004DEE04 /* HomeTableViewCell.swift */,
+				B8789469264DA14A004DEE04 /* HomeTableViewCellViewModel.swift */,
+				B878946B264DA157004DEE04 /* HomeTableViewCoordinator.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B878946E264DA306004DEE04 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B878946F264DA32D004DEE04 /* HomeCellInteractionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B8789471264DAE9A004DEE04 /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				B8789474264DB26E004DEE04 /* CollectionView */,
+				B8789472264DAEAD004DEE04 /* HomeHeaderView.swift */,
+			);
+			path = HeaderView;
+			sourceTree = "<group>";
+		};
+		B8789474264DB26E004DEE04 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				B8789475264DB289004DEE04 /* HomeCollectionViewCell.swift */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -509,10 +559,12 @@
 				B878940C264C3F83004DEE04 /* HomeCoordinator.swift in Sources */,
 				B878940A264C3F7A004DEE04 /* HomeViewModel.swift in Sources */,
 				B864B4DE264AE3350056C356 /* WelcomeViewModel.swift in Sources */,
+				B8789470264DA32D004DEE04 /* HomeCellInteractionView.swift in Sources */,
 				B878941F264D3232004DEE04 /* SearchCoordinator.swift in Sources */,
 				B864B4DC264AE32D0056C356 /* WelcomeViewController.swift in Sources */,
 				B864B4F3264B7D760056C356 /* UIView+extensions.swift in Sources */,
 				B8789459264D724F004DEE04 /* AddCoordinator.swift in Sources */,
+				B878946A264DA14A004DEE04 /* HomeTableViewCellViewModel.swift in Sources */,
 				B864B4EC264AEFD20056C356 /* UIImageView+extensions.swift in Sources */,
 				1AC52F26264BAD9D00C04EA4 /* R.generated.swift in Sources */,
 				B864B4E6264AE7E20056C356 /* UILabel+extensions.swift in Sources */,
@@ -520,6 +572,7 @@
 				B8789460264D7D30004DEE04 /* RoundedImageView.swift in Sources */,
 				B864B4B9264AD9D00056C356 /* SceneDelegate.swift in Sources */,
 				B8789418264D31C4004DEE04 /* TabBarViewModel.swift in Sources */,
+				B8789476264DB289004DEE04 /* HomeCollectionViewCell.swift in Sources */,
 				B864B4D6264AE2900056C356 /* SignInViewController.swift in Sources */,
 				B878944F264D6011004DEE04 /* FavoriteViewModel.swift in Sources */,
 				B8789453264D6A38004DEE04 /* UIColor+extensions.swift in Sources */,
@@ -529,11 +582,14 @@
 				B864B4D8264AE29B0056C356 /* SignInViewModel.swift in Sources */,
 				B864B4D4264AE2870056C356 /* SignInCoordinator.swift in Sources */,
 				B864B4E0264AE3B80056C356 /* Coordinator.swift in Sources */,
+				B8789468264D998B004DEE04 /* HomeTableViewCell.swift in Sources */,
 				B8789416264D01BE004DEE04 /* SettingsManager.swift in Sources */,
+				B8789473264DAEAD004DEE04 /* HomeHeaderView.swift in Sources */,
 				B864B4DA264AE3240056C356 /* WelcomeCoordinator.swift in Sources */,
 				B878944A264D5EB7004DEE04 /* AccountCoordinator.swift in Sources */,
 				B864B4D2264AE2770056C356 /* SignUpViewModel.swift in Sources */,
 				B878941A264D31D9004DEE04 /* TabBarViewController.swift in Sources */,
+				B878946C264DA157004DEE04 /* HomeTableViewCoordinator.swift in Sources */,
 				B8789463264D894A004DEE04 /* AccountHorizontalView.swift in Sources */,
 				B864B4D0264AE26D0056C356 /* SignUpViewController.swift in Sources */,
 				B8789451264D6018004DEE04 /* FavoriteCoordinator.swift in Sources */,
