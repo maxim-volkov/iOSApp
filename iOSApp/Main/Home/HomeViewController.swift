@@ -12,7 +12,7 @@ final class HomeViewController: BaseViewController {
     var viewModel: HomeViewModel!
     
     private let tableView: UITableView = {
-        let tv = UITableView()
+        let tv = UITableView(frame: .zero, style: .grouped)
         tv.showsVerticalScrollIndicator = false
         tv.rowHeight = UITableView.automaticDimension
         tv.estimatedRowHeight = 100
@@ -20,6 +20,7 @@ final class HomeViewController: BaseViewController {
         tv.sectionHeaderHeight = UITableView.automaticDimension
         tv.estimatedSectionHeaderHeight = 80
         tv.isScrollEnabled = true
+        tv.separatorStyle = .none
         tv.register(HomeHeaderView.self, forHeaderFooterViewReuseIdentifier: HomeHeaderView.identifier)
         return tv
     }()
@@ -38,14 +39,14 @@ final class HomeViewController: BaseViewController {
         
         view.addSubview(tableView)
     }
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        navigationController?.hidesBarsOnSwipe = true
-//      }
-//    override func viewWillDisappear(_ animated: Bool) {
-//        super.viewWillDisappear(animated)
-//        navigationController?.hidesBarsOnSwipe = false
-//      }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.hidesBarsOnSwipe = true
+      }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.hidesBarsOnSwipe = false
+      }
 
     private func setupLayout() {
         tableView.snp.makeConstraints { make in
