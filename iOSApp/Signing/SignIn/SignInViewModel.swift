@@ -7,17 +7,34 @@
 
 import Foundation
 
+enum SignInType {
+    case phone, email
+}
+
 final class SignInViewModel {
     
-    private(set) var title: String = RL.signIn()
-    
+    private(set) var title: String
+    private let signInType: SignInType
     private let parentCoordinator: SignInCoordinator
     
-    init(coordinator: Coordinator) {
+    init(coordinator: Coordinator, signInType: SignInType) {
         self.parentCoordinator = coordinator as! SignInCoordinator
+        self.signInType = signInType
+        switch signInType {
+        case .email:
+            title = RL.enterYourEmail()
+        case .phone:
+            title = RL.enterYourPhoneNumber()
+        }
     }
     
     func signInBtnTapped(email: String?, password: String?) {
         parentCoordinator.showHomeScreen()
+    }
+    func forgetPasswordTapped() {
+        parentCoordinator.showForgetPassword()
+    }
+    func notMemberTapped() {
+        parentCoordinator.showSignUp()
     }
 }
