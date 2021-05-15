@@ -30,6 +30,7 @@
 "forgetPasswordEnterDetails" = "Forget password?\nEnter your E-mail or Phone number. We will send confirmation code";
 "sentConfirmationCode" = "We have sent a confirmation code to %1$@. Please check your your email or phone number";
 "enterCode" = "Enter code";
+"notReceivedCode" = "Did not get a code? Send again";
 //Home
 "appName" = "Social Network";
 

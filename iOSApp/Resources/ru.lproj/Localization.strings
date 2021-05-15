@@ -10,11 +10,11 @@
 "welcomeMsg" = "Мы приближаем вас к тому, что вы любите.";
 "secondWelcomeMsg" = "Создайте свою собственную социальную сеть";
 "signInToApp" = "Sign in to BrandNewApp";
-"welcomeBack" = "Добро пожаловать ";
-"signUpToApp" = "Welcome\nSign up to BrandNewApp";
+"welcomeBack" = "Добро пожаловать";
+"signUpToApp" = "Добро пожаловать\nЗарегистрируйтесь в BrandNewApp";
 "enterYourDetails" = "Введите свои данные ниже";
 "createAccount" = "Создать новый аккаунт";
-"enterYourPhoneNumber" = "Enter your phone number";
+"enterYourPhoneNumber" = "Введите свой номер телефона";
 "emailOrPhone" = "Электронная почта или номер телефона";
 "enterYourEmail" = "Введите адрес электронной почты";
 "password" = "Пароль";
@@ -30,6 +30,7 @@
 "forgetPasswordEnterDetails" = "Забыли пароль?\nВведите свой адрес электронной почты или номер телефона. Мы пришлем код подтверждения";
 "sentConfirmationCode" = "Мы отправили код подтверждения на %1$@. Пожалуйста, проверьте свою электронную почту или номер телефона";
 "enterCode" = "Введите код";
+"notReceivedCode" = "Не получили код? Отправить занова";
 //Home
 "appName" = "Social Network";
 

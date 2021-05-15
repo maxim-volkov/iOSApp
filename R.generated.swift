@@ -216,7 +216,7 @@ struct R: Rswift.Validatable {
       fileprivate init() {}
     }
 
-    /// This `R.string.localization` struct is generated, and contains static references to 27 localization keys.
+    /// This `R.string.localization` struct is generated, and contains static references to 28 localization keys.
     struct localization {
       /// en translation: Account
       ///
@@ -242,6 +242,10 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: en, ru, uz-UZ
       static let createAccount = Rswift.StringResource(key: "createAccount", tableName: "Localization", bundle: R.hostingBundle, locales: ["en", "ru", "uz-UZ"], comment: nil)
+      /// en translation: Did not get a code? Send again
+      ///
+      /// Locales: en, ru, uz-UZ
+      static let notReceivedCode = Rswift.StringResource(key: "notReceivedCode", tableName: "Localization", bundle: R.hostingBundle, locales: ["en", "ru", "uz-UZ"], comment: nil)
       /// en translation: E-mail or Phone number
       ///
       /// Locales: en, ru, uz-UZ
@@ -415,6 +419,21 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("createAccount", tableName: "Localization", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Did not get a code? Send again
+      ///
+      /// Locales: en, ru, uz-UZ
+      static func notReceivedCode(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("notReceivedCode", tableName: "Localization", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localization", preferredLanguages: preferredLanguages) else {
+          return "notReceivedCode"
+        }
+
+        return NSLocalizedString("notReceivedCode", tableName: "Localization", bundle: bundle, comment: "")
       }
 
       /// en translation: E-mail or Phone number
