@@ -19,7 +19,13 @@ final class WelcomeViewModel {
         parentCoordinator.showSignUp()
     }
     
-    func signInTapped() {
-        parentCoordinator.showSignIn()
+    func signInWithPhoneTapped() {
+        parentCoordinator.showSignIn(signInType: .phone)
+    }
+    func signInWithEmailTapped() {
+        parentCoordinator.showSignIn(signInType: .email)
+    }
+    func forgetPasswordTapped() {
+        parentCoordinator.showForgetPassword()
     }
 }
