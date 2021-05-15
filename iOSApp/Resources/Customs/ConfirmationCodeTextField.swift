@@ -17,19 +17,13 @@ final class OneTimeCodeTextField: UITextField {
     
     private var digitLabels = [UILabel]()
     
-    private lazy var tapRecognizer: UITapGestureRecognizer = {
-        let recognizer = UITapGestureRecognizer()
-        recognizer.addTarget(self, action: #selector(becomeFirstResponder))
-        return recognizer
-    }()
-    
     init(with slotCount: Int = 6) {
         super.init(frame: .zero)
         
         configureTextField()
         let labelsStackView = createLabelsStackView(with: slotCount)
         addSubview(labelsStackView)
-        
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(becomeFirstResponder))
         addGestureRecognizer(tapRecognizer)
         labelsStackView.snp.makeConstraints { (make) in
             make.top.bottom.leading.trailing.equalToSuperview()
@@ -61,10 +55,11 @@ final class OneTimeCodeTextField: UITextField {
             let label = UILabel()
             label.translatesAutoresizingMaskIntoConstraints = false
             label.textAlignment = .center
-            label.font = .systemFont(ofSize: 40)
+            label.font = appMediumFont(size: 40)
             label.isUserInteractionEnabled = true
+            label.backgroundColor = .appDyanmicClearGrayColor
             label.layer.borderWidth = 1
-            label.layer.borderColor = appGrayColor.cgColor
+            label.layer.borderColor = appLightGrayColor.cgColor
             label.layer.cornerRadius = 8
             label.layer.masksToBounds = true
             stackView.addArrangedSubview(label)
@@ -80,7 +75,6 @@ final class OneTimeCodeTextField: UITextField {
         
         for i in 0 ..< digitLabels.count {
             let currentLabel = digitLabels[i]
-            
             if i < text.count {
                 let index = text.index(text.startIndex, offsetBy: i)
                 currentLabel.text = String(text[index])
@@ -98,6 +92,16 @@ final class OneTimeCodeTextField: UITextField {
 
 extension OneTimeCodeTextField: UITextFieldDelegate {
     
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        guard let characterCount = textField.text?.count else { return }
+        for i in 0 ..< digitLabels.count {
+            if characterCount == i {
+                digitLabels[i].layer.borderColor = appGrayColor.cgColor
+            } else {
+                digitLabels[i].layer.borderColor = appLightGrayColor.cgColor
+            }
+        }
+    }
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         guard let characterCount = textField.text?.count else { return false }
         return characterCount < digitLabels.count || string == ""
