@@ -11,13 +11,13 @@ final class SignUpViewController: BaseViewController {
 
     var viewModel: SignUpViewModel!
     private let scrollView = UIScrollView()
-    private let signUpToAppLabel = UILabel.makeLabel(RL.signUpToApp(), font: appBoldFont(size: 35), color: appDarkColor, textAligment: .center, numberOfLines: 3)
+    private let signUpToAppLabel = UILabel.makeLabel(RL.signUpToApp(), font: appBoldFont(size: 35), color: .appBlackWhiteColor, textAligment: .center, numberOfLines: 3)
     private let stackView = UIStackView(axis: .vertical, distribution: .fillProportionally, spacing: 20)
 
     private lazy var emailPhoneTextField = AppTextField(placeholder: viewModel.title)
     private let passwordTextField = AppTextField(placeholder: RL.password(), isSecureTextEntry:  true)
     private let confirmPasswordTextField = AppTextField(placeholder: RL.confirmPassword(), isSecureTextEntry: true)
-    private let signUpBtn = UIButton.makeButton(title: RL.signUp(), backgroundColor: appDarkColor)
+    private let signUpBtn = UIButton.makeButton(title: RL.signUp(), backgroundColor: .appBlackBrandColor)
 
     override func viewDidLoad() {
         super.viewDidLoad()

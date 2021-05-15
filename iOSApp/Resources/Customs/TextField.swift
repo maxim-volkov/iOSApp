@@ -21,7 +21,7 @@ final class AppTextField: UITextField {
         let rect = super.textRect(forBounds: bounds)
         return rect.inset(by: textPadding)
     }
-
+    
     override func editingRect(forBounds bounds: CGRect) -> CGRect {
         let rect = super.editingRect(forBounds: bounds)
         return rect.inset(by: textPadding)
@@ -29,11 +29,13 @@ final class AppTextField: UITextField {
     
     init(placeholder: String?, isSecureTextEntry: Bool = false) {
         super.init(frame: .zero)
-        self.placeholder = placeholder
         layer.cornerRadius = 10
         layer.borderWidth = 1
-        layer.borderColor = appDarkColor!.cgColor
-        tintColor = appDarkColor
+        layer.borderColor = appDarkColor.cgColor
+        tintColor = .appBlackWhiteColor
+        attributedPlaceholder = NSAttributedString(string: placeholder ?? "", attributes: [NSAttributedString.Key.foregroundColor: UIColor.appGrayWhiteColor])
+        textColor = .appGrayWhiteColor
+        backgroundColor = .appDyanmicClearGrayColor
         if isSecureTextEntry {
             rightView = btn
             rightViewMode = .always

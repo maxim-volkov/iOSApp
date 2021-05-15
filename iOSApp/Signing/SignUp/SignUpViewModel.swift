@@ -20,7 +20,7 @@ final class SignUpViewModel {
         guard let email = email, let password = password, let confirmPassword = confirmPassword else {
             return false
         }
-        if Helper.isEmailValid(email: email), password.trim().count > 4, password == confirmPassword {
+        if Helper.isEmailValid(email: email), Helper.isPasswordValid(password: password), password == confirmPassword {
             parentCoordinator.showHomeScreen()
             return true
         } else {

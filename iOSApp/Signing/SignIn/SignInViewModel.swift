@@ -32,7 +32,7 @@ final class SignInViewModel {
         guard let email = email, let password = password else {
             return false
         }
-        if Helper.isEmailValid(email: email), password.trim().count > 4 {
+        if Helper.isEmailValid(email: email), Helper.isPasswordValid(password: password) {
             parentCoordinator.showHomeScreen()
             return true
         } else {

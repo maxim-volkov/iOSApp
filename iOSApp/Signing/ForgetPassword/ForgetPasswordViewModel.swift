@@ -21,9 +21,7 @@ final class ForgetPasswordViewModel {
         if Helper.isEmailValid(email: emailOrPhoneNumber) {
             parentCoordinator.showConfirmation(emailOrPhoneNumber: emailOrPhoneNumber)
             return true
-        } else if !emailOrPhoneNumber.isEmpty && emailOrPhoneNumber.allSatisfy({ char in
-            return char.isNumber
-        }) {
+        } else if Helper.isPhoneNumberValid(emailOrPhoneNumber) {
             parentCoordinator.showConfirmation(emailOrPhoneNumber: emailOrPhoneNumber)
             return true
         } else {

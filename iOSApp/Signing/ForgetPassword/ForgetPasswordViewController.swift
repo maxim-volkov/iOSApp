@@ -12,9 +12,9 @@ final class ForgetPasswordViewController: BaseViewController {
     var viewModel: ForgetPasswordViewModel!
     private let scrollView = UIScrollView()
     private let stackView = UIStackView(axis: .vertical, distribution: .fillProportionally, spacing: 20)
-    private let forgetPasswordLabel = UILabel.makeLabel(RL.forgetPasswordEnterDetails(), font: appMediumFont(size: 16), color: appGrayColor, textAligment: .center, numberOfLines: 0)
+    private let forgetPasswordLabel = UILabel.makeLabel(RL.forgetPasswordEnterDetails(), font: appMediumFont(size: 16), color: .appGrayWhiteColor, textAligment: .center, numberOfLines: 0)
     private let textField = AppTextField(placeholder: RL.emailOrPhone())
-    private let nextBtn = UIButton.makeButton(title: RL.next(), backgroundColor: appBlackColor)
+    private let nextBtn = UIButton.makeButton(title: RL.next(), backgroundColor: .appBlackBrandColor)
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -33,7 +33,7 @@ extension UIColor {
         return nil
     }
     
-    public convenience init?(r: CGFloat, g: CGFloat, b: CGFloat, alpa: CGFloat = 1) {
+    public convenience init(r: CGFloat, g: CGFloat, b: CGFloat, alpa: CGFloat = 1) {
         self.init(red: r/255.0, green: g/255.0, blue: g/255.0, alpha: alpa)
     }
 

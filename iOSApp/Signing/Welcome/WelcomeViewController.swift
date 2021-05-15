@@ -13,7 +13,7 @@ class WelcomeViewController: BaseViewController {
     var viewModel: WelcomeViewModel!
     
     private let logoImageView = UIImageView(image: nil, contentMode: .scaleAspectFit)
-    private let welcomeLabel = UILabel.makeLabel(RL.welcomeMsg(), font: appBoldFont(size: 35), color: appDarkColor, textAligment: .left, numberOfLines: 0)
+    private let welcomeLabel = UILabel.makeLabel(RL.welcomeMsg(), font: appBoldFont(size: 35), color: .appBlackWhiteColor, textAligment: .left, numberOfLines: 0)
     private let buildYourOwnSocial = UILabel.makeLabel(RL.secondWelcomeMsg(), font: .systemFont(ofSize: 24), textAligment: .center)
     
     private let loginView = UIView.makeTopRoundedView()
@@ -39,7 +39,7 @@ class WelcomeViewController: BaseViewController {
     }
     
     private func setupView() {
-        logoImageView.backgroundColor = appGrayColor
+        logoImageView.backgroundColor = .appDyanmicGrayColor
         loginView.backgroundColor = appWhiteColor
         signInWithPhone.addTarget(self, action: #selector(signInWithPhoneTapped), for: .touchUpInside)
         signInWithEmail.addTarget(self, action: #selector(signInWithEmailTapped), for: .touchUpInside)

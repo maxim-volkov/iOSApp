@@ -13,4 +13,17 @@ final class Helper {
         guard emailPred.evaluate(with: email) else { return false }
         return true
     }
+    
+    static func isPasswordValid(password: String?) -> Bool {
+        guard let password = password else { return false }
+        guard password.trim().count > 5 else { return false }
+        return true
+    }
+
+    static func isPhoneNumberValid(_ phoneNumber: String?) -> Bool {
+        guard let number = phoneNumber, !number.isEmpty else { return false }
+        guard number.trim().allSatisfy({ $0.isNumber }) else { return false }
+        return true
+    }
+
 }
