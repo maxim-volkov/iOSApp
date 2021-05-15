@@ -27,6 +27,7 @@ final class SignInViewController: BaseViewController {
     }
     
     private func setupView() {
+        textField.keyboardType = viewModel.keyboardType
         notMemberButton.addTarget(self, action: #selector(notMemberTapped), for: .touchUpInside)
         signInBtn.addTarget(self, action: #selector(signInBtnTapped), for: .touchUpInside)
         forgetPasswordButton.addTarget(self, action: #selector(forgetPasswordTapped), for: .touchUpInside)

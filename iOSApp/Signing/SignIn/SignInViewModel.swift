@@ -5,7 +5,7 @@
 //  Created by HOGGISH on 11/05/21.
 //
 
-import Foundation
+import UIKit
 
 enum SignInType {
     case phone, email
@@ -14,6 +14,7 @@ enum SignInType {
 final class SignInViewModel {
     
     private(set) var title: String
+    private(set) var keyboardType: UIKeyboardType
     private let signInType: SignInType
     private let parentCoordinator: SignInCoordinator
     
@@ -23,8 +24,10 @@ final class SignInViewModel {
         switch signInType {
         case .email:
             title = RL.email()
+            keyboardType = .emailAddress
         case .phone:
             title = RL.phoneNumber()
+            keyboardType = .numberPad
         }
     }
     
