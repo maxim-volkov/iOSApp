@@ -12,7 +12,7 @@ final class SignInViewController: BaseViewController {
     var viewModel: SignInViewModel!
     private let scrollView = UIScrollView()
     private let stackView = UIStackView(axis: .vertical, distribution: .fillProportionally, spacing: 20)
-    private let signInToAppLabel = UILabel.makeLabel(RL.signInToApp(), font: appBoldFont(size: 35), color: .appBlackWhiteColor, textAligment: .center, numberOfLines: 3)
+    private let signInToAppLabel = UILabel.makeLabel(RL.welcomeBack(), font: appBoldFont(size: 35), color: .appBlackWhiteColor, textAligment: .center, numberOfLines: 3)
     private let enterYourDetailsLabel = UILabel.makeLabel(RL.enterYourDetails(), font: appMediumFont(size: 15), color: .appGrayWhiteColor, textAligment: .center)
     
     private lazy var textField = AppTextField(placeholder: viewModel.title)

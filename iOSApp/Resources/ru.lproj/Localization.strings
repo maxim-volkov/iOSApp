@@ -1,0 +1,43 @@
+/* 
+  Localization.strings
+  iOSApp
+
+  Created by Jasurbek Shomurodov on 5/12/21.
+  
+*/
+
+//Signing
+"welcomeMsg" = "Мы приближаем вас к тому, что вы любите.";
+"secondWelcomeMsg" = "Создайте свою собственную социальную сеть";
+"signInToApp" = "Sign in to BrandNewApp";
+"welcomeBack" = "Добро пожаловать ";
+"signUpToApp" = "Welcome\nSign up to BrandNewApp";
+"enterYourDetails" = "Введите свои данные ниже";
+"createAccount" = "Создать новый аккаунт";
+"enterYourPhoneNumber" = "Enter your phone number";
+"emailOrPhone" = "Электронная почта или номер телефона";
+"enterYourEmail" = "Введите адрес электронной почты";
+"password" = "Пароль";
+"signIn" = "Войти";
+"signUp" = "Зарегистрироваться";
+"next" = "Дальше";
+"signInWithEmail" = "Войти по электронной почте";
+"signInWithPhone" = "Войти по номеру телефона";
+"notAMember" = "Зарегистрироваться сейчас";
+"alreadyMember" = "Войти";
+"confirmPassword" = "Подтвердить Пароль";
+"forgetPassword" = "Забыли пароль?";
+"forgetPasswordEnterDetails" = "Забыли пароль?\nВведите свой адрес электронной почты или номер телефона. Мы пришлем код подтверждения";
+"sentConfirmationCode" = "Мы отправили код подтверждения на %1$@. Пожалуйста, проверьте свою электронную почту или номер телефона";
+"enterCode" = "Введите код";
+//Home
+"appName" = "Social Network";
+
+//Search
+"search" = "Поиск";
+
+//Favorite
+"favorite" = "Activity";
+
+//Account
+"account" = "Аккаунт";

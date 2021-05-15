@@ -1,0 +1,43 @@
+/* 
+  Localization.strings
+  iOSApp
+
+  Created by Jasurbek Shomurodov on 5/12/21.
+  
+*/
+
+//Signing
+"welcomeMsg" = "We bring you closer to the things you love.";
+"secondWelcomeMsg" = "Build your own social network";
+"signInToApp" = "Sign in to BrandNewApp";
+"welcomeBack" = "Welcome back";
+"signUpToApp" = "Welcome\nSign up to BrandNewApp";
+"enterYourDetails" = "Enter your details below";
+"createAccount" = "Create new account";
+"enterYourPhoneNumber" = "Enter your phone number";
+"emailOrPhone" = "E-mail or Phone number";
+"enterYourEmail" = "Enter your E-mail";
+"password" = "Password";
+"signIn" = "Sign In";
+"signUp" = "Sign Up";
+"next" = "Next";
+"signInWithEmail" = "Sign In with email";
+"signInWithPhone" = "Sign In with phone";
+"notAMember" = "Not a member? Sign Up now";
+"alreadyMember" = "Already a member? Sign In";
+"confirmPassword" = "Confirm Password";
+"forgetPassword" = "Forget password?";
+"forgetPasswordEnterDetails" = "Forget password?\nEnter your E-mail or Phone number. We will send confirmation code";
+"sentConfirmationCode" = "We have sent a confirmation code to %1$@. Please check your your email or phone number";
+"enterCode" = "Enter code";
+//Home
+"appName" = "Social Network";
+
+//Search
+"search" = "Search";
+
+//Favorite
+"favorite" = "Activity";
+
+//Account
+"account" = "Account";
