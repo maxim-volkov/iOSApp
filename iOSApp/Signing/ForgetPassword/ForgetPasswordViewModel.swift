@@ -8,7 +8,7 @@
 import Foundation
 
 final class ForgetPasswordViewModel {
-        
+    
     private(set) var title: String = RL.forgetPassword()
     private let parentCoordinator: ForgetPasswordCoordinator
     
@@ -16,10 +16,18 @@ final class ForgetPasswordViewModel {
         self.parentCoordinator = coordinator as! ForgetPasswordCoordinator
     }
     
-    func nextBtnTapped(emailOrPhoneNumber: String?) {
-        guard let emailOrPhoneNumber = emailOrPhoneNumber else {
-            return
+    func nextBtnTapped(emailOrPhoneNumber: String?) -> Bool {
+        guard let emailOrPhoneNumber = emailOrPhoneNumber else { return false }
+        if Helper.isEmailValid(email: emailOrPhoneNumber) {
+            parentCoordinator.showConfirmation(emailOrPhoneNumber: emailOrPhoneNumber)
+            return true
+        } else if !emailOrPhoneNumber.isEmpty && emailOrPhoneNumber.allSatisfy({ char in
+            return char.isNumber
+        }) {
+            parentCoordinator.showConfirmation(emailOrPhoneNumber: emailOrPhoneNumber)
+            return true
+        } else {
+            return false
         }
-        parentCoordinator.showConfirmation(emailOrPhoneNumber: emailOrPhoneNumber)
     }
 }

@@ -26,7 +26,7 @@
 "alreadyMember" = "Already a member? Sign In";
 "confirmPassword" = "Confirm Password";
 "forgetPassword" = "Forget password?";
-"forgetPasswordEnterDetails" = "Forget password?\nEnter details below";
+"forgetPasswordEnterDetails" = "Forget password?\nEnter your E-mail or Phone number. We will send confirmation code";
 "sentConfirmationCode" = "We have sent a confirmation code to %1$@. Please check your your email or phone number";
 "enterCode" = "Enter code";
 //Home

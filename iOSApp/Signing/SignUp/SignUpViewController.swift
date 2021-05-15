@@ -36,7 +36,7 @@ final class SignUpViewController: BaseViewController {
     private func setupLayout() {
         scrollView.snp.makeConstraints { make in
             make.top.bottom.equalTo(view.safeAreaLayoutGuide)
-            make.leading.trailing.equalToSuperview().inset(appLargePadding)
+            make.leading.trailing.equalToSuperview()
         }
         signUpToAppLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().inset(appExtraLargePadding)
@@ -44,10 +44,14 @@ final class SignUpViewController: BaseViewController {
         }
         stackView.snp.makeConstraints { make in
             make.top.equalTo(signUpToAppLabel.snp.bottom).inset(-appExtraLargePadding)
-            make.leading.width.trailing.equalToSuperview()
+            make.leading.width.trailing.equalToSuperview().inset(appLargePadding)
         }
     }
     @objc private func signUpBtnTapped() {
-        viewModel.signUpBtnTapped(email: emailPhoneTextField.text, password: passwordTextField.text, confirmPassword: confirmPasswordTextField.text)
+        if !viewModel.signUpBtnTapped(email: emailPhoneTextField.text, password: passwordTextField.text, confirmPassword: confirmPasswordTextField.text) {
+            if let aShake = makeShakeAnimation() {
+                scrollView.layer.add(aShake, forKey: "shake")
+            }
+        }
     }
 }

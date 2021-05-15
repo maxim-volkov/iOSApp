@@ -28,8 +28,16 @@ final class SignInViewModel {
         }
     }
     
-    func signInBtnTapped(email: String?, password: String?) {
-        parentCoordinator.showHomeScreen()
+    func signInBtnTapped(email: String?, password: String?) -> Bool {
+        guard let email = email, let password = password else {
+            return false
+        }
+        if Helper.isEmailValid(email: email), password.trim().count > 4 {
+            parentCoordinator.showHomeScreen()
+            return true
+        } else {
+            return false
+        }
     }
     func forgetPasswordTapped() {
         parentCoordinator.showForgetPassword()

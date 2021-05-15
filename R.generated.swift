@@ -193,8 +193,29 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.string` struct is generated, and contains static references to 1 localization tables.
+  /// This `R.string` struct is generated, and contains static references to 2 localization tables.
   struct string {
+    /// This `R.string.constants` struct is generated, and contains static references to 1 localization keys.
+    struct constants {
+      /// Value: [A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,64}
+      static let emailRegEx = Rswift.StringResource(key: "emailRegEx", tableName: "constants", bundle: R.hostingBundle, locales: [], comment: nil)
+
+      /// Value: [A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,64}
+      static func emailRegEx(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("emailRegEx", tableName: "constants", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "constants", preferredLanguages: preferredLanguages) else {
+          return "emailRegEx"
+        }
+
+        return NSLocalizedString("emailRegEx", tableName: "constants", bundle: bundle, comment: "")
+      }
+
+      fileprivate init() {}
+    }
+
     /// This `R.string.localization` struct is generated, and contains static references to 26 localization keys.
     struct localization {
       /// Value: Account
@@ -221,7 +242,7 @@ struct R: Rswift.Validatable {
       static let enterYourPhoneNumber = Rswift.StringResource(key: "enterYourPhoneNumber", tableName: "Localization", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Forget password?
       static let forgetPassword = Rswift.StringResource(key: "forgetPassword", tableName: "Localization", bundle: R.hostingBundle, locales: [], comment: nil)
-      /// Value: Forget password? Enter details below
+      /// Value: Forget password? Enter your E-mail or Phone number. We will send confirmation code
       static let forgetPasswordEnterDetails = Rswift.StringResource(key: "forgetPasswordEnterDetails", tableName: "Localization", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Next
       static let next = Rswift.StringResource(key: "next", tableName: "Localization", bundle: R.hostingBundle, locales: [], comment: nil)
@@ -406,7 +427,7 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("forgetPassword", tableName: "Localization", bundle: bundle, comment: "")
       }
 
-      /// Value: Forget password? Enter details below
+      /// Value: Forget password? Enter your E-mail or Phone number. We will send confirmation code
       static func forgetPasswordEnterDetails(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
           return NSLocalizedString("forgetPasswordEnterDetails", tableName: "Localization", bundle: hostingBundle, comment: "")

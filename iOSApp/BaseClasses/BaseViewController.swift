@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 class BaseViewController: UIViewController {
 
@@ -17,7 +18,15 @@ class BaseViewController: UIViewController {
         navigationController?.navigationBar.tintColor = appDarkColor
     }
     
-    
+    func makeShakeAnimation() -> CAAnimation? {
+        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
+        let shake = CAKeyframeAnimation(keyPath: "transform.translation.x")
+        shake.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        shake.duration = 0.75
+        shake.values = [-20, 20, -15, 15, -10, 10, -5, 5, 0]
+        return shake
+    }
+
     deinit {
         print("viewcontroller deallocated")
     }

@@ -40,7 +40,7 @@ final class SignInViewController: BaseViewController {
     private func setupLayout() {
         scrollView.snp.makeConstraints { make in
             make.top.bottom.equalTo(view.safeAreaLayoutGuide)
-            make.leading.trailing.equalToSuperview().inset(appLargePadding)
+            make.leading.trailing.equalToSuperview()
         }
         signInToAppLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().inset(appExtraLargePadding)
@@ -52,7 +52,7 @@ final class SignInViewController: BaseViewController {
         }
         stackView.snp.makeConstraints { make in
             make.top.equalTo(enterYourDetailsLabel.snp.bottom).inset(-appExtraLargePadding)
-            make.leading.width.trailing.equalToSuperview()
+            make.leading.width.trailing.equalToSuperview().inset(appLargePadding)
         }
         notMemberButton.snp.makeConstraints { make in
             make.top.equalTo(stackView.snp.bottom).inset(-appPadding)
@@ -65,7 +65,11 @@ final class SignInViewController: BaseViewController {
     }
     
     @objc private func signInBtnTapped() {
-        viewModel.signInBtnTapped(email: textField.text, password: passwordTextField.text)
+        if !viewModel.signInBtnTapped(email: textField.text, password: passwordTextField.text) {
+            if let aShake = makeShakeAnimation() {
+                scrollView.layer.add(aShake, forKey: "shake")
+            }
+        }
     }
     @objc private func notMemberTapped() {
         viewModel.notMemberTapped()

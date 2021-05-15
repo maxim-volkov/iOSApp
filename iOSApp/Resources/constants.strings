@@ -1,0 +1,8 @@
+/* 
+  constants.strings
+  iOSApp
+
+  Created by HOGGISH on 15/05/21.
+  
+*/
+"emailRegEx" = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}";

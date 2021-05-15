@@ -16,7 +16,15 @@ final class SignUpViewModel {
     init(coordinator: Coordinator) {
         self.parentCoordinator = coordinator as! SignUpCoordinator
     }
-    func signUpBtnTapped(email: String?, password: String?, confirmPassword: String?) {
-        parentCoordinator.showHomeScreen()
+    func signUpBtnTapped(email: String?, password: String?, confirmPassword: String?) -> Bool {
+        guard let email = email, let password = password, let confirmPassword = confirmPassword else {
+            return false
+        }
+        if Helper.isEmailValid(email: email), password.trim().count > 4, password == confirmPassword {
+            parentCoordinator.showHomeScreen()
+            return true
+        } else {
+            return false
+        }
     }
 }
