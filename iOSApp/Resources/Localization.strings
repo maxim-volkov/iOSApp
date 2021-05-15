@@ -7,14 +7,26 @@
 */
 
 //Signing
-"welcomeMsg" = "Welcome";
+"welcomeMsg" = "We bring you closer to the things you love.";
 "secondWelcomeMsg" = "Build your own social network";
+"signInToApp" = "Sign in to BrandNewApp";
+"signUpToApp" = "Welcome\nSign up to BrandNewApp";
+"enterYourDetails" = "Enter your details below";
 "createAccount" = "Create new account";
-"emailPhoneNumber" = "E-mail or phone number";
+"enterYourPhoneNumber" = "Enter your phone number";
+"emailOrPhone" = "E-mail or Phone number";
+"enterYourEmail" = "Enter your E-mail";
 "password" = "Password";
 "signIn" = "Sign In";
 "signUp" = "Sign Up";
+"next" = "Next";
+"signInWithEmail" = "Sign In with email";
+"signInWithPhone" = "Sign In with phone";
+"notAMember" = "Not a member? Sign Up now";
+"alreadyMember" = "Already a member? Sign In";
 "confirmPassword" = "Confirm Password";
+"forgetPassword" = "Forget password?";
+"forgetPasswordEnterDetails" = "Forget password?\nEnter details below";
 //Home
 "appName" = "Social Network";
 
