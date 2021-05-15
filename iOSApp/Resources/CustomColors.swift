@@ -15,7 +15,7 @@ extension UIColor {
     }
     
     class var appDyanmicGrayColor: UIColor {
-        return UIColor { $0.userInterfaceStyle == .light ? appGrayColor.withAlphaComponent(0.2) : appGrayColor }
+        return UIColor { $0.userInterfaceStyle == .light ? appLightGrayColor : appGrayColor }
     }
     
     class var appDyanmicClearGrayColor: UIColor {
@@ -34,6 +34,7 @@ let appBlueColor = UIColor(r: 247, g: 247, b: 247, alpa: 1)
 let appBrandColor: UIColor = .purple
 let appBlackColor = UIColor.black
 //let appGrayColor = UIColor.lightGray
+let appLightGrayColor = appGrayColor.withAlphaComponent(0.2)
 let appGrayColor = UIColor(r: 41, g: 41, b: 41, alpa: 1)
 let appWhiteColor = UIColor(hex: "#ffF9F9F9")!
 let appDarkColor = UIColor(r: 34, g: 38, b: 47)
