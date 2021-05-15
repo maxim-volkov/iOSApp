@@ -10,7 +10,7 @@ import UIKit
 final class ConfirmViewController: BaseViewController, OneTimeCodeTextFieldDelegate {
     
     var viewModel: ConfirmViewModel!
-    private let scrollView = UIScrollView()
+    private let scrollView = UIScrollView(showsIndicator: false)
     private let stackView = UIStackView(axis: .vertical, distribution: .fill, spacing: 20)
     
     private lazy var confirmationLabel = UILabel.makeLabel(RL.sentConfirmationCode(viewModel.emailOrPhoneNumber), font: appMediumFont(size: 16), color: .appGrayWhiteColor, textAligment: .center, numberOfLines: 0)
@@ -37,7 +37,7 @@ final class ConfirmViewController: BaseViewController, OneTimeCodeTextFieldDeleg
     private func setupLayout() {
         scrollView.snp.makeConstraints { make in
             make.top.bottom.equalTo(view.safeAreaLayoutGuide)
-            make.leading.trailing.equalToSuperview().inset(appLargePadding)
+            make.leading.trailing.equalToSuperview()
         }
         confirmationLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().inset(appExtraLargePadding)
@@ -48,7 +48,7 @@ final class ConfirmViewController: BaseViewController, OneTimeCodeTextFieldDeleg
         }
         stackView.snp.makeConstraints { make in
             make.top.equalTo(confirmationLabel.snp.bottom).inset(-appExtraLargePadding)
-            make.leading.width.trailing.equalToSuperview()
+            make.leading.width.trailing.equalToSuperview().inset(appLargePadding)
         }
     }
     @objc private func nextBtnTapped() {
@@ -63,7 +63,17 @@ final class ConfirmViewController: BaseViewController, OneTimeCodeTextFieldDeleg
             textField.text = ""
         }
     }
-    
+    override func keyboardWillShow(_ notification: Notification) {
+        if let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+            let keyboardRectangle = keyboardFrame.cgRectValue
+            let keyboardHeight = keyboardRectangle.height
+            scrollView.contentSize = CGSize(width: scrollView.frame.width, height: scrollView.frame.height + keyboardHeight)
+        }
+    }
+    override func keyboardWillHide(_ notification: Notification) {
+        scrollView.contentSize = scrollView.frame.size
+    }
+
     //MARK:- OneTimeCodeTextFieldDelegate
     func didEnterLastDigit(_ text: String) {
         view.endEditing(true)

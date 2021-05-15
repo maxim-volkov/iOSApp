@@ -10,7 +10,7 @@ import UIKit
 final class SignInViewController: BaseViewController {
     
     var viewModel: SignInViewModel!
-    private let scrollView = UIScrollView()
+    private let scrollView = UIScrollView(showsIndicator: false)
     private let stackView = UIStackView(axis: .vertical, distribution: .fillProportionally, spacing: 20)
     private let signInToAppLabel = UILabel.makeLabel(RL.welcomeBack(), font: appBoldFont(size: 35), color: .appBlackWhiteColor, textAligment: .center, numberOfLines: 3)
     private let enterYourDetailsLabel = UILabel.makeLabel(RL.enterYourDetails(), font: appMediumFont(size: 15), color: .appGrayWhiteColor, textAligment: .center)
@@ -64,7 +64,17 @@ final class SignInViewController: BaseViewController {
             make.leading.trailing.equalTo(stackView)
         }
     }
-    
+    override func keyboardWillShow(_ notification: Notification) {
+        if let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+            let keyboardRectangle = keyboardFrame.cgRectValue
+            let keyboardHeight = keyboardRectangle.height
+            scrollView.contentSize = CGSize(width: scrollView.frame.width, height: scrollView.frame.height + keyboardHeight)
+        }
+    }
+    override func keyboardWillHide(_ notification: Notification) {
+        scrollView.contentSize = scrollView.frame.size
+    }
+
     @objc private func signInBtnTapped() {
         if !viewModel.signInBtnTapped(email: textField.text, password: passwordTextField.text) {
             if let aShake = makeShakeAnimation() {

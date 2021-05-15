@@ -10,7 +10,7 @@ import UIKit
 final class ForgetPasswordViewController: BaseViewController {
     
     var viewModel: ForgetPasswordViewModel!
-    private let scrollView = UIScrollView()
+    private let scrollView = UIScrollView(showsIndicator: false)
     private let stackView = UIStackView(axis: .vertical, distribution: .fillProportionally, spacing: 20)
     private let forgetPasswordLabel = UILabel.makeLabel(RL.forgetPasswordEnterDetails(), font: appMediumFont(size: 16), color: .appGrayWhiteColor, textAligment: .center, numberOfLines: 0)
     private let textField = AppTextField(placeholder: RL.emailOrPhone())
@@ -43,6 +43,16 @@ final class ForgetPasswordViewController: BaseViewController {
             make.top.equalTo(forgetPasswordLabel.snp.bottom).inset(-appExtraLargePadding)
             make.leading.width.trailing.equalToSuperview().inset(appLargePadding)
         }
+    }
+    override func keyboardWillShow(_ notification: Notification) {
+        if let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+            let keyboardRectangle = keyboardFrame.cgRectValue
+            let keyboardHeight = keyboardRectangle.height
+            scrollView.contentSize = CGSize(width: scrollView.frame.width, height: scrollView.frame.height + keyboardHeight)
+        }
+    }
+    override func keyboardWillHide(_ notification: Notification) {
+        scrollView.contentSize = scrollView.frame.size
     }
     
     @objc private func nextBtnTapped() {
