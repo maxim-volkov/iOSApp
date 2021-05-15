@@ -14,6 +14,9 @@
 		B81521AB264E78CC00B498CA /* StoryPreviewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81521AA264E78CC00B498CA /* StoryPreviewCoordinator.swift */; };
 		B81521AD264E7A2400B498CA /* HomeHeaderModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81521AC264E7A2400B498CA /* HomeHeaderModelView.swift */; };
 		B81521AF264E7A3700B498CA /* HomeCollectionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81521AE264E7A3700B498CA /* HomeCollectionCellViewModel.swift */; };
+		B8261E19264FB2030044A72D /* ForgetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8261E18264FB2030044A72D /* ForgetPasswordViewModel.swift */; };
+		B8261E1B264FB2090044A72D /* ForgetPasswordCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8261E1A264FB2090044A72D /* ForgetPasswordCoordinator.swift */; };
+		B8261E1D264FB2180044A72D /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8261E1C264FB2180044A72D /* ForgetPasswordViewController.swift */; };
 		B83D5561264B96BE003791F5 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83D5560264B96BE003791F5 /* TextField.swift */; };
 		B864B4B7264AD9D00056C356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B864B4B6264AD9D00056C356 /* AppDelegate.swift */; };
 		B864B4B9264AD9D00056C356 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B864B4B8264AD9D00056C356 /* SceneDelegate.swift */; };
@@ -80,6 +83,9 @@
 		B81521AA264E78CC00B498CA /* StoryPreviewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPreviewCoordinator.swift; sourceTree = "<group>"; };
 		B81521AC264E7A2400B498CA /* HomeHeaderModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderModelView.swift; sourceTree = "<group>"; };
 		B81521AE264E7A3700B498CA /* HomeCollectionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionCellViewModel.swift; sourceTree = "<group>"; };
+		B8261E18264FB2030044A72D /* ForgetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewModel.swift; sourceTree = "<group>"; };
+		B8261E1A264FB2090044A72D /* ForgetPasswordCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordCoordinator.swift; sourceTree = "<group>"; };
+		B8261E1C264FB2180044A72D /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		B83D5560264B96BE003791F5 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		B864B4B3264AD9D00056C356 /* iOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B864B4B6264AD9D00056C356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -186,6 +192,16 @@
 				B81521AA264E78CC00B498CA /* StoryPreviewCoordinator.swift */,
 			);
 			path = StoryPreview;
+			sourceTree = "<group>";
+		};
+		B8261E17264FB1F80044A72D /* ForgetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				B8261E18264FB2030044A72D /* ForgetPasswordViewModel.swift */,
+				B8261E1A264FB2090044A72D /* ForgetPasswordCoordinator.swift */,
+				B8261E1C264FB2180044A72D /* ForgetPasswordViewController.swift */,
+			);
+			path = ForgetPassword;
 			sourceTree = "<group>";
 		};
 		B83D555F264B96B3003791F5 /* Customs */ = {
@@ -297,6 +313,7 @@
 		B8789406264C3EB6004DEE04 /* Signing */ = {
 			isa = PBXGroup;
 			children = (
+				B8261E17264FB1F80044A72D /* ForgetPassword */,
 				B864B4CC264AE2180056C356 /* Welcome */,
 				B864B4CB264AE1EB0056C356 /* SignIn */,
 				B864B4CA264AE04A0056C356 /* SignUp */,
@@ -565,13 +582,16 @@
 				B8789457264D724A004DEE04 /* AddViewModel.swift in Sources */,
 				B8789421264D323A004DEE04 /* SearchViewModel.swift in Sources */,
 				B8789448264D5EAF004DEE04 /* AccountViewModel.swift in Sources */,
+				B8261E1D264FB2180044A72D /* ForgetPasswordViewController.swift in Sources */,
 				B878940E264C3F8A004DEE04 /* HomeViewController.swift in Sources */,
 				B864B4F1264AFE140056C356 /* UITextField+extensions.swift in Sources */,
 				B864B4E8264AE91A0056C356 /* UIStackView+extensions.swift in Sources */,
+				B8261E19264FB2030044A72D /* ForgetPasswordViewModel.swift in Sources */,
 				B864B4E3264AE5C60056C356 /* BaseViewController.swift in Sources */,
 				B83D5561264B96BE003791F5 /* TextField.swift in Sources */,
 				B81521AB264E78CC00B498CA /* StoryPreviewCoordinator.swift in Sources */,
 				B864B4CE264AE2630056C356 /* SignUpCoordinator.swift in Sources */,
+				B8261E1B264FB2090044A72D /* ForgetPasswordCoordinator.swift in Sources */,
 				B878944D264D6008004DEE04 /* FavoriteViewController.swift in Sources */,
 				B8789414264D0179004DEE04 /* AppCoordinator.swift in Sources */,
 				B8789446264D5EA7004DEE04 /* AccountViewController.swift in Sources */,
