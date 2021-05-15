@@ -28,8 +28,13 @@ final class WelcomeCoordinator: Coordinator {
         childCoordinators.append(coordinator)
     }
     
-    func showSignIn() {
+    func showSignIn(signInType: SignInType) {
         let coordinator = SignInCoordinator(navCtrl: navigationController)
+        coordinator.start(signInType)
+        childCoordinators.append(coordinator)
+    }
+    func showForgetPassword() {
+        let coordinator = ForgetPasswordCoordinator(navCtrl: navigationController)
         coordinator.start()
         childCoordinators.append(coordinator)
     }
