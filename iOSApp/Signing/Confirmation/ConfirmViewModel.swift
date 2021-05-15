@@ -19,4 +19,8 @@ final class ConfirmViewModel {
     func nextBtnTapped() -> Bool {
         return false
     }
+    
+    func didNotRecieveCodeTapped() -> Bool {
+        return false
+    }
 }

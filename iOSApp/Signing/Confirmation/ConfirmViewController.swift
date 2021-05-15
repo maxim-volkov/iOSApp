@@ -15,6 +15,7 @@ final class ConfirmViewController: BaseViewController {
 
     private lazy var confirmationLabel = UILabel.makeLabel(RL.sentConfirmationCode(viewModel.emailOrPhoneNumber), font: appMediumFont(size: 16), color: .appGrayWhiteColor, textAligment: .center, numberOfLines: 0)
     private let textField = AppTextField(placeholder: RL.enterCode())
+    private let didNotRecieveCode = UIButton.makeLabelButton(title: RL.notReceivedCode(), textColor: appBrandColor, titleFont: appMediumFont(size: 16))
     private let nextBtn = UIButton.makeButton(title: RL.next(), backgroundColor: .appBlackBrandColor)
 
     override func viewDidLoad() {
@@ -25,10 +26,11 @@ final class ConfirmViewController: BaseViewController {
     
     private func setupView() {
         nextBtn.addTarget(self, action: #selector(nextBtnTapped), for: .touchUpInside)
+        didNotRecieveCode.addTarget(self, action: #selector(didNotRecieveCodeTapped), for: .touchUpInside)
         view.addSubview(scrollView)
         stackView.alignment = .fill
         scrollView.addSubviews(confirmationLabel, stackView)
-        stackView.addArrangedViews(textField, nextBtn)
+        stackView.addArrangedViews(textField, didNotRecieveCode, nextBtn)
     }
     
     private func setupLayout() {
@@ -51,6 +53,11 @@ final class ConfirmViewController: BaseViewController {
             if let aShake = makeShakeAnimation() {
                 scrollView.layer.add(aShake, forKey: "shake")
             }
+        }
+    }
+    @objc private func didNotRecieveCodeTapped() {
+        if viewModel.didNotRecieveCodeTapped() {
+            textField.text = ""
         }
     }
 }
