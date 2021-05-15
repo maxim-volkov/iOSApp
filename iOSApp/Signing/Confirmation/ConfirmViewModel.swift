@@ -16,4 +16,7 @@ final class ConfirmViewModel {
         self.emailOrPhoneNumber = emailOrPhoneNumber
     }
     
+    func nextBtnTapped() -> Bool {
+        return false
+    }
 }
