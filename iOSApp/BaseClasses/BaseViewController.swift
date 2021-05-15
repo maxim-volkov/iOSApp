@@ -16,6 +16,8 @@ class BaseViewController: UIViewController {
         navigationController?.navigationBar.standardAppearance.backgroundColor = .systemBackground
         navigationController?.navigationBar.standardAppearance.shadowColor = .clear
         navigationController?.navigationBar.tintColor = .appBlackBrandColor
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
+        view.addGestureRecognizer(tapGestureRecognizer)
     }
     
     func makeShakeAnimation() -> CAAnimation? {
@@ -27,6 +29,9 @@ class BaseViewController: UIViewController {
         return shake
     }
 
+    @objc private func viewTapped() {
+        view.endEditing(true)
+    }
     deinit {
         print("viewcontroller deallocated")
     }
