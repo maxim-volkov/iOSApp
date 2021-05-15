@@ -15,4 +15,8 @@ final class ForgetPasswordViewModel {
     init(coordinator: Coordinator) {
         self.parentCoordinator = coordinator as! ForgetPasswordCoordinator
     }
+    
+    func nextBtnTapped() {
+        parentCoordinator.showConfirmation()
+    }
 }

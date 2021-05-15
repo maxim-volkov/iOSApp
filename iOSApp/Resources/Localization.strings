@@ -27,6 +27,8 @@
 "confirmPassword" = "Confirm Password";
 "forgetPassword" = "Forget password?";
 "forgetPasswordEnterDetails" = "Forget password?\nEnter details below";
+"sentConfirmationCode" = "We have sent a confirmation code. Please check your your email or phone number";
+"enterCode" = "Enter code";
 //Home
 "appName" = "Social Network";
 

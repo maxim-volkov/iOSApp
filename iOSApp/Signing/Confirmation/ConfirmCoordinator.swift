@@ -1,5 +1,5 @@
 //
-//  ForgetPasswordCoordinator.swift
+//  ConfirmCoordinator.swift
 //  iOSApp
 //
 //  Created by HOGGISH on 15/05/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class ForgetPasswordCoordinator: Coordinator {
+final class ConfirmCoordinator: Coordinator {
     var childCoordinators: [Coordinator] = []
     
     var navigationController: UINavigationController
@@ -17,15 +17,9 @@ final class ForgetPasswordCoordinator: Coordinator {
     }
     
     func start() {
-        let ctrl = ForgetPasswordViewController()
-        let viewModel = ForgetPasswordViewModel(coordinator: self)
+        let ctrl = ConfirmViewController()
+        let viewModel = ConfirmViewModel(coordinator: self)
         ctrl.viewModel = viewModel
         navigationController.pushViewController(ctrl, animated: true)
-    }
-    
-    func showConfirmation() {
-        let coordinator = ConfirmCoordinator(navCtrl: navigationController)
-        coordinator.start()
-        childCoordinators.append(coordinator)
     }
 }

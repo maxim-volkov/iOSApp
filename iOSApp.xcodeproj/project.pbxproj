@@ -17,6 +17,9 @@
 		B8261E19264FB2030044A72D /* ForgetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8261E18264FB2030044A72D /* ForgetPasswordViewModel.swift */; };
 		B8261E1B264FB2090044A72D /* ForgetPasswordCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8261E1A264FB2090044A72D /* ForgetPasswordCoordinator.swift */; };
 		B8261E1D264FB2180044A72D /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8261E1C264FB2180044A72D /* ForgetPasswordViewController.swift */; };
+		B8261E20264FB7E50044A72D /* ConfirmCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8261E1F264FB7E50044A72D /* ConfirmCoordinator.swift */; };
+		B8261E22264FB7F30044A72D /* ConfirmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8261E21264FB7F30044A72D /* ConfirmViewModel.swift */; };
+		B8261E24264FB7FA0044A72D /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8261E23264FB7FA0044A72D /* ConfirmViewController.swift */; };
 		B83D5561264B96BE003791F5 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83D5560264B96BE003791F5 /* TextField.swift */; };
 		B864B4B7264AD9D00056C356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B864B4B6264AD9D00056C356 /* AppDelegate.swift */; };
 		B864B4B9264AD9D00056C356 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B864B4B8264AD9D00056C356 /* SceneDelegate.swift */; };
@@ -86,6 +89,9 @@
 		B8261E18264FB2030044A72D /* ForgetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewModel.swift; sourceTree = "<group>"; };
 		B8261E1A264FB2090044A72D /* ForgetPasswordCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordCoordinator.swift; sourceTree = "<group>"; };
 		B8261E1C264FB2180044A72D /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		B8261E1F264FB7E50044A72D /* ConfirmCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCoordinator.swift; sourceTree = "<group>"; };
+		B8261E21264FB7F30044A72D /* ConfirmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewModel.swift; sourceTree = "<group>"; };
+		B8261E23264FB7FA0044A72D /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
 		B83D5560264B96BE003791F5 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		B864B4B3264AD9D00056C356 /* iOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B864B4B6264AD9D00056C356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -204,6 +210,16 @@
 			path = ForgetPassword;
 			sourceTree = "<group>";
 		};
+		B8261E1E264FB7A70044A72D /* Confirmation */ = {
+			isa = PBXGroup;
+			children = (
+				B8261E1F264FB7E50044A72D /* ConfirmCoordinator.swift */,
+				B8261E21264FB7F30044A72D /* ConfirmViewModel.swift */,
+				B8261E23264FB7FA0044A72D /* ConfirmViewController.swift */,
+			);
+			path = Confirmation;
+			sourceTree = "<group>";
+		};
 		B83D555F264B96B3003791F5 /* Customs */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,6 +329,7 @@
 		B8789406264C3EB6004DEE04 /* Signing */ = {
 			isa = PBXGroup;
 			children = (
+				B8261E1E264FB7A70044A72D /* Confirmation */,
 				B8261E17264FB1F80044A72D /* ForgetPassword */,
 				B864B4CC264AE2180056C356 /* Welcome */,
 				B864B4CB264AE1EB0056C356 /* SignIn */,
@@ -615,12 +632,15 @@
 				B8789460264D7D30004DEE04 /* RoundedImageView.swift in Sources */,
 				B864B4B9264AD9D00056C356 /* SceneDelegate.swift in Sources */,
 				B81521A7264E78BA00B498CA /* StoryPreviewViewController.swift in Sources */,
+				B8261E24264FB7FA0044A72D /* ConfirmViewController.swift in Sources */,
+				B8261E20264FB7E50044A72D /* ConfirmCoordinator.swift in Sources */,
 				B8789418264D31C4004DEE04 /* TabBarViewModel.swift in Sources */,
 				B8789476264DB289004DEE04 /* HomeCollectionViewCell.swift in Sources */,
 				B864B4D6264AE2900056C356 /* SignInViewController.swift in Sources */,
 				B878944F264D6011004DEE04 /* FavoriteViewModel.swift in Sources */,
 				B81521AF264E7A3700B498CA /* HomeCollectionCellViewModel.swift in Sources */,
 				B8789453264D6A38004DEE04 /* UIColor+extensions.swift in Sources */,
+				B8261E22264FB7F30044A72D /* ConfirmViewModel.swift in Sources */,
 				B864B4EA264AED940056C356 /* UIButton+extensions.swift in Sources */,
 				B864B4EE264AF2C50056C356 /* GlobalVariables.swift in Sources */,
 				B878945B264D7256004DEE04 /* AddViewController.swift in Sources */,

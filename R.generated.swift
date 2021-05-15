@@ -195,7 +195,7 @@ struct R: Rswift.Validatable {
 
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localization` struct is generated, and contains static references to 24 localization keys.
+    /// This `R.string.localization` struct is generated, and contains static references to 26 localization keys.
     struct localization {
       /// Value: Account
       static let account = Rswift.StringResource(key: "account", tableName: "Localization", bundle: R.hostingBundle, locales: [], comment: nil)
@@ -211,6 +211,8 @@ struct R: Rswift.Validatable {
       static let createAccount = Rswift.StringResource(key: "createAccount", tableName: "Localization", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: E-mail or Phone number
       static let emailOrPhone = Rswift.StringResource(key: "emailOrPhone", tableName: "Localization", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Enter code
+      static let enterCode = Rswift.StringResource(key: "enterCode", tableName: "Localization", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Enter your E-mail
       static let enterYourEmail = Rswift.StringResource(key: "enterYourEmail", tableName: "Localization", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Enter your details below
@@ -243,6 +245,8 @@ struct R: Rswift.Validatable {
       static let appName = Rswift.StringResource(key: "appName", tableName: "Localization", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: We bring you closer to the things you love.
       static let welcomeMsg = Rswift.StringResource(key: "welcomeMsg", tableName: "Localization", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: We have sent a confirmation code. Please check your your email or phone number
+      static let sentConfirmationCode = Rswift.StringResource(key: "sentConfirmationCode", tableName: "Localization", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Welcome Sign up to BrandNewApp
       static let signUpToApp = Rswift.StringResource(key: "signUpToApp", tableName: "Localization", bundle: R.hostingBundle, locales: [], comment: nil)
 
@@ -335,6 +339,19 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("emailOrPhone", tableName: "Localization", bundle: bundle, comment: "")
+      }
+
+      /// Value: Enter code
+      static func enterCode(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("enterCode", tableName: "Localization", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localization", preferredLanguages: preferredLanguages) else {
+          return "enterCode"
+        }
+
+        return NSLocalizedString("enterCode", tableName: "Localization", bundle: bundle, comment: "")
       }
 
       /// Value: Enter your E-mail
@@ -543,6 +560,19 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("welcomeMsg", tableName: "Localization", bundle: bundle, comment: "")
+      }
+
+      /// Value: We have sent a confirmation code. Please check your your email or phone number
+      static func sentConfirmationCode(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("sentConfirmationCode", tableName: "Localization", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localization", preferredLanguages: preferredLanguages) else {
+          return "sentConfirmationCode"
+        }
+
+        return NSLocalizedString("sentConfirmationCode", tableName: "Localization", bundle: bundle, comment: "")
       }
 
       /// Value: Welcome Sign up to BrandNewApp
