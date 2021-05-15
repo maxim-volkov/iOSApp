@@ -13,4 +13,12 @@ extension UIView {
         views.forEach{ self.addSubview($0) }
     }
     
+    static func makeTopRoundedView() -> UIView {
+        let view = UIView()
+        view.layer.cornerRadius = 30
+        view.layer.maskedCorners = [.layerMinXMinYCorner,.layerMaxXMinYCorner]
+        view.layer.masksToBounds = true
+        return view
+    }
+    
 }

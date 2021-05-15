@@ -32,8 +32,8 @@ final class AppTextField: UITextField {
         self.placeholder = placeholder
         layer.cornerRadius = 10
         layer.borderWidth = 1
-        layer.borderColor = appBrandColor.cgColor
-        tintColor = appBrandColor
+        layer.borderColor = appDarkColor!.cgColor
+        tintColor = appDarkColor
         if isSecureTextEntry {
             rightView = btn
             rightViewMode = .always
