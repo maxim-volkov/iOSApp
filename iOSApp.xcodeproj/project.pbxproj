@@ -24,6 +24,7 @@
 		B82F8BD9264FDC710096358A /* String+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F8BD8264FDC710096358A /* String+extensions.swift */; };
 		B82F8BDB265017940096358A /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F8BDA265017940096358A /* CustomColors.swift */; };
 		B82F8BDC26502C660096358A /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = B82F8BDE26502C660096358A /* Localization.strings */; };
+		B82F8BE226503BF80096358A /* ConfirmationCodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82F8BE126503BF80096358A /* ConfirmationCodeTextField.swift */; };
 		B83D5561264B96BE003791F5 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83D5560264B96BE003791F5 /* TextField.swift */; };
 		B864B4B7264AD9D00056C356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B864B4B6264AD9D00056C356 /* AppDelegate.swift */; };
 		B864B4B9264AD9D00056C356 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B864B4B8264AD9D00056C356 /* SceneDelegate.swift */; };
@@ -101,6 +102,7 @@
 		B82F8BDA265017940096358A /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		B82F8BDD26502C660096358A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localization.strings; sourceTree = "<group>"; };
 		B82F8BDF26502D000096358A /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localization.strings; sourceTree = "<group>"; };
+		B82F8BE126503BF80096358A /* ConfirmationCodeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationCodeTextField.swift; sourceTree = "<group>"; };
 		B83D5560264B96BE003791F5 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		B864B4B3264AD9D00056C356 /* iOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B864B4B6264AD9D00056C356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 			children = (
 				B83D5560264B96BE003791F5 /* TextField.swift */,
 				B878945F264D7D30004DEE04 /* RoundedImageView.swift */,
+				B82F8BE126503BF80096358A /* ConfirmationCodeTextField.swift */,
 			);
 			path = Customs;
 			sourceTree = "<group>";
@@ -650,6 +653,7 @@
 				B864B4B9264AD9D00056C356 /* SceneDelegate.swift in Sources */,
 				B82F8BD9264FDC710096358A /* String+extensions.swift in Sources */,
 				B81521A7264E78BA00B498CA /* StoryPreviewViewController.swift in Sources */,
+				B82F8BE226503BF80096358A /* ConfirmationCodeTextField.swift in Sources */,
 				B8261E24264FB7FA0044A72D /* ConfirmViewController.swift in Sources */,
 				B8261E20264FB7E50044A72D /* ConfirmCoordinator.swift in Sources */,
 				B8789418264D31C4004DEE04 /* TabBarViewModel.swift in Sources */,
