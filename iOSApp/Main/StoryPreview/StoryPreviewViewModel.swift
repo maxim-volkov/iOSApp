@@ -9,7 +9,7 @@ import Foundation
 
 final class StoryPreviewViewModel {
     
-    private(set) var title: String = RL.signIn()
+    private(set) var title: String = RL.signInWithPhone()
     
     private let parentCoordinator: StoryPreviewCoordinator
     
