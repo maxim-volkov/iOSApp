@@ -245,7 +245,7 @@ struct R: Rswift.Validatable {
       static let appName = Rswift.StringResource(key: "appName", tableName: "Localization", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: We bring you closer to the things you love.
       static let welcomeMsg = Rswift.StringResource(key: "welcomeMsg", tableName: "Localization", bundle: R.hostingBundle, locales: [], comment: nil)
-      /// Value: We have sent a confirmation code. Please check your your email or phone number
+      /// Value: We have sent a confirmation code to %1$@. Please check your your email or phone number
       static let sentConfirmationCode = Rswift.StringResource(key: "sentConfirmationCode", tableName: "Localization", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Welcome Sign up to BrandNewApp
       static let signUpToApp = Rswift.StringResource(key: "signUpToApp", tableName: "Localization", bundle: R.hostingBundle, locales: [], comment: nil)
@@ -562,17 +562,19 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("welcomeMsg", tableName: "Localization", bundle: bundle, comment: "")
       }
 
-      /// Value: We have sent a confirmation code. Please check your your email or phone number
-      static func sentConfirmationCode(preferredLanguages: [String]? = nil) -> String {
+      /// Value: We have sent a confirmation code to %1$@. Please check your your email or phone number
+      static func sentConfirmationCode(_ value1: String, preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
-          return NSLocalizedString("sentConfirmationCode", tableName: "Localization", bundle: hostingBundle, comment: "")
+          let format = NSLocalizedString("sentConfirmationCode", tableName: "Localization", bundle: hostingBundle, comment: "")
+          return String(format: format, locale: applicationLocale, value1)
         }
 
-        guard let (_, bundle) = localeBundle(tableName: "Localization", preferredLanguages: preferredLanguages) else {
+        guard let (locale, bundle) = localeBundle(tableName: "Localization", preferredLanguages: preferredLanguages) else {
           return "sentConfirmationCode"
         }
 
-        return NSLocalizedString("sentConfirmationCode", tableName: "Localization", bundle: bundle, comment: "")
+        let format = NSLocalizedString("sentConfirmationCode", tableName: "Localization", bundle: bundle, comment: "")
+        return String(format: format, locale: locale, value1)
       }
 
       /// Value: Welcome Sign up to BrandNewApp

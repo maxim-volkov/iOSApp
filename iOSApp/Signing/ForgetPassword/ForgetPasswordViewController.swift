@@ -48,6 +48,6 @@ final class ForgetPasswordViewController: BaseViewController {
     }
     
     @objc private func nextBtnTapped() {
-        viewModel.nextBtnTapped()
+        viewModel.nextBtnTapped(emailOrPhoneNumber: textField.text)
     }
 }

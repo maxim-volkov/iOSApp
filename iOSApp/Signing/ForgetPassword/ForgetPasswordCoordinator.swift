@@ -23,9 +23,9 @@ final class ForgetPasswordCoordinator: Coordinator {
         navigationController.pushViewController(ctrl, animated: true)
     }
     
-    func showConfirmation() {
+    func showConfirmation(emailOrPhoneNumber: String) {
         let coordinator = ConfirmCoordinator(navCtrl: navigationController)
-        coordinator.start()
+        coordinator.start(emailOrPhoneNumber: emailOrPhoneNumber)
         childCoordinators.append(coordinator)
     }
 }

@@ -10,9 +10,10 @@ import Foundation
 final class ConfirmViewModel {
     
     private let parentCoordinator: ConfirmCoordinator
-
-    init(coordinator: Coordinator) {
+    private(set) var emailOrPhoneNumber: String
+    init(coordinator: Coordinator, emailOrPhoneNumber: String) {
         self.parentCoordinator = coordinator as! ConfirmCoordinator
+        self.emailOrPhoneNumber = emailOrPhoneNumber
     }
     
 }

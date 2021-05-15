@@ -15,10 +15,12 @@ final class ConfirmCoordinator: Coordinator {
     init(navCtrl: UINavigationController) {
         self.navigationController = navCtrl
     }
-    
     func start() {
+        fatalError("should not be called this")
+    }
+    func start(emailOrPhoneNumber: String) {
         let ctrl = ConfirmViewController()
-        let viewModel = ConfirmViewModel(coordinator: self)
+        let viewModel = ConfirmViewModel(coordinator: self, emailOrPhoneNumber: emailOrPhoneNumber)
         ctrl.viewModel = viewModel
         navigationController.pushViewController(ctrl, animated: true)
     }

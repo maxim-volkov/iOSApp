@@ -16,7 +16,10 @@ final class ForgetPasswordViewModel {
         self.parentCoordinator = coordinator as! ForgetPasswordCoordinator
     }
     
-    func nextBtnTapped() {
-        parentCoordinator.showConfirmation()
+    func nextBtnTapped(emailOrPhoneNumber: String?) {
+        guard let emailOrPhoneNumber = emailOrPhoneNumber else {
+            return
+        }
+        parentCoordinator.showConfirmation(emailOrPhoneNumber: emailOrPhoneNumber)
     }
 }

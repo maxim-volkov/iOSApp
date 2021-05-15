@@ -13,7 +13,7 @@ final class ConfirmViewController: BaseViewController {
     private let scrollView = UIScrollView()
     private let stackView = UIStackView(axis: .vertical, distribution: .fillProportionally, spacing: 20)
 
-    private let confirmationLabel = UILabel.makeLabel(RL.sentConfirmationCode(), font: appMediumFont(size: 16), color: appGrayColor, textAligment: .center, numberOfLines: 0)
+    private lazy var confirmationLabel = UILabel.makeLabel(RL.sentConfirmationCode(viewModel.emailOrPhoneNumber), font: appMediumFont(size: 16), color: appGrayColor, textAligment: .center, numberOfLines: 0)
     private let textField = AppTextField(placeholder: RL.enterCode())
     private let nextBtn = UIButton.makeButton(title: RL.next(), backgroundColor: appBlackColor)
 
