@@ -14,9 +14,9 @@
 "signUpToApp" = "Welcome\nSign up to BrandNewApp";
 "enterYourDetails" = "Enter your details below";
 "createAccount" = "Create new account";
-"enterYourPhoneNumber" = "Enter your phone number";
+"phoneNumber" = "Phone number";
 "emailOrPhone" = "E-mail or Phone number";
-"enterYourEmail" = "Enter your E-mail";
+"email" = "E-mail";
 "password" = "Password";
 "signIn" = "Sign In";
 "signUp" = "Sign Up";

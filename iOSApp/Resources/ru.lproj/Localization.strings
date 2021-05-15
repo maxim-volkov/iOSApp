@@ -14,9 +14,9 @@
 "signUpToApp" = "Добро пожаловать\nЗарегистрируйтесь в BrandNewApp";
 "enterYourDetails" = "Введите свои данные ниже";
 "createAccount" = "Создать новый аккаунт";
-"enterYourPhoneNumber" = "Введите свой номер телефона";
+"phoneNumber" = "Номер телефона";
 "emailOrPhone" = "Электронная почта или номер телефона";
-"enterYourEmail" = "Введите адрес электронной почты";
+"email" = "Электронная почта";
 "password" = "Пароль";
 "signIn" = "Войти";
 "signUp" = "Зарегистрироваться";

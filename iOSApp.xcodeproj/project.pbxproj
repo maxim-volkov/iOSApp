@@ -101,7 +101,6 @@
 		B82F8BDA265017940096358A /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		B82F8BDD26502C660096358A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localization.strings; sourceTree = "<group>"; };
 		B82F8BDF26502D000096358A /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localization.strings; sourceTree = "<group>"; };
-		B82F8BE026502D320096358A /* uz-UZ */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "uz-UZ"; path = "uz-UZ.lproj/Localization.strings"; sourceTree = "<group>"; };
 		B83D5560264B96BE003791F5 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		B864B4B3264AD9D00056C356 /* iOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B864B4B6264AD9D00056C356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -688,7 +687,6 @@
 			children = (
 				B82F8BDD26502C660096358A /* en */,
 				B82F8BDF26502D000096358A /* ru */,
-				B82F8BE026502D320096358A /* uz-UZ */,
 			);
 			name = Localization.strings;
 			sourceTree = "<group>";

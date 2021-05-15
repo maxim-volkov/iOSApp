@@ -22,9 +22,9 @@ final class SignInViewModel {
         self.signInType = signInType
         switch signInType {
         case .email:
-            title = RL.enterYourEmail()
+            title = RL.email()
         case .phone:
-            title = RL.enterYourPhoneNumber()
+            title = RL.phoneNumber()
         }
     }
     
