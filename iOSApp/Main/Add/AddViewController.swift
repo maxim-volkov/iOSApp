@@ -16,7 +16,8 @@ final class AddViewController: BaseViewController {
         setupView()
     }
     
-    private func setupView() {
+    override func setupView() {
+        super.setupView()
         title = viewModel.title
     }
 }

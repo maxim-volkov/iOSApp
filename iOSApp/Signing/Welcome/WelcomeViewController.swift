@@ -38,7 +38,8 @@ class WelcomeViewController: BaseViewController {
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
-    private func setupView() {
+    override func setupView() {
+        super.setupView()
         logoImageView.backgroundColor = .appDyanmicGrayColor
         loginView.backgroundColor = appWhiteColor
         signInWithPhone.addTarget(self, action: #selector(signInWithPhoneTapped), for: .touchUpInside)
@@ -52,7 +53,8 @@ class WelcomeViewController: BaseViewController {
         loginView.addSubviews(signInWithPhone, signInWithEmail, notMemberButton, forgetPasswordButton)
     }
     
-    private func setupLayout() {
+    override func setupLayout() {
+        super.setupLayout()
         logoImageView.snp.makeConstraints { make in
             make.top.leading.trailing.equalToSuperview()
             make.height.equalToSuperview().multipliedBy(0.65)

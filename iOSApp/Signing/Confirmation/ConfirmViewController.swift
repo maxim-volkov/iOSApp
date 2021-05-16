@@ -24,7 +24,8 @@ final class ConfirmViewController: BaseViewController, OneTimeCodeTextFieldDeleg
         setupLayout()
     }
     
-    private func setupView() {
+    override func setupView() {
+        super.setupView()
         textField.oneTimeCodeTextFieldDelegate = self
         nextBtn.addTarget(self, action: #selector(nextBtnTapped), for: .touchUpInside)
         didNotRecieveCode.addTarget(self, action: #selector(didNotRecieveCodeTapped), for: .touchUpInside)
@@ -34,7 +35,8 @@ final class ConfirmViewController: BaseViewController, OneTimeCodeTextFieldDeleg
         stackView.addArrangedViews(textField, didNotRecieveCode, nextBtn)
     }
     
-    private func setupLayout() {
+    override func setupLayout() {
+        super.setupLayout()
         scrollView.snp.makeConstraints { make in
             make.top.bottom.equalTo(view.safeAreaLayoutGuide)
             make.leading.trailing.equalToSuperview()

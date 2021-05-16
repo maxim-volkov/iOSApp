@@ -31,7 +31,8 @@ final class HomeViewController: BaseViewController {
         setupLayout()
     }
     
-    private func setupView() {
+    override func setupView() {
+        super.setupView()
         title = viewModel.title
         tableView.dataSource = self
         tableView.delegate = self
@@ -48,7 +49,8 @@ final class HomeViewController: BaseViewController {
         navigationController?.hidesBarsOnSwipe = false
       }
 
-    private func setupLayout() {
+    override func setupLayout() {
+        super.setupLayout()
         tableView.snp.makeConstraints { make in
             make.top.bottom.equalToSuperview()
             make.leading.trailing.equalToSuperview().inset(appPadding)

@@ -26,7 +26,8 @@ final class SignInViewController: BaseViewController {
         setupLayout()
     }
     
-    private func setupView() {
+    override func setupView() {
+        super.setupView()
         textField.keyboardType = viewModel.keyboardType
         notMemberButton.addTarget(self, action: #selector(notMemberTapped), for: .touchUpInside)
         signInBtn.addTarget(self, action: #selector(signInBtnTapped), for: .touchUpInside)
@@ -38,7 +39,8 @@ final class SignInViewController: BaseViewController {
         
     }
     
-    private func setupLayout() {
+    override func setupLayout() {
+        super.setupLayout()
         scrollView.snp.makeConstraints { make in
             make.top.bottom.equalTo(view.safeAreaLayoutGuide)
             make.leading.trailing.equalToSuperview()

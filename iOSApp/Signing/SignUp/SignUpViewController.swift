@@ -25,7 +25,8 @@ final class SignUpViewController: BaseViewController {
         setupLayout()
     }
     
-    private func setupView() {
+    override func setupView() {
+        super.setupView()
         signUpBtn.addTarget(self, action: #selector(signUpBtnTapped), for: .touchUpInside)
         view.addSubview(scrollView)
         scrollView.addSubviews(signUpToAppLabel, stackView)
@@ -33,7 +34,8 @@ final class SignUpViewController: BaseViewController {
         stackView.addArrangedViews(emailPhoneTextField, passwordTextField, confirmPasswordTextField, signUpBtn)
     }
     
-    private func setupLayout() {
+    override func setupLayout() {
+        super.setupLayout()
         scrollView.snp.makeConstraints { make in
             make.top.bottom.equalTo(view.safeAreaLayoutGuide)
             make.leading.trailing.equalToSuperview()

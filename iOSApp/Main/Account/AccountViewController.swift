@@ -21,13 +21,15 @@ final class AccountViewController: BaseViewController {
         setupLayout()
     }
     
-    private func setupView() {
+    override func setupView() {
+        super.setupView()
         title = viewModel.title
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "gearshape"), style: .done, target: self, action: #selector(righBarButtonTapped))
         
         view.addSubviews(horizontalView, userDetailsLabel)
     }
-    private func setupLayout() {
+    override func setupLayout() {
+        super.setupLayout()
         horizontalView.snp.makeConstraints { make in
             make.topMargin.equalToSuperview()
             make.leading.trailing.equalToSuperview().inset(appLargePadding)

@@ -22,7 +22,8 @@ final class ForgetPasswordViewController: BaseViewController {
         setupLayout()
         
     }
-    private func setupView() {
+    override func setupView() {
+        super.setupView()
         nextBtn.addTarget(self, action: #selector(nextBtnTapped), for: .touchUpInside)
         view.addSubview(scrollView)
         stackView.alignment = .fill
@@ -30,7 +31,8 @@ final class ForgetPasswordViewController: BaseViewController {
         stackView.addArrangedViews(textField, nextBtn)
     }
     
-    private func setupLayout() {
+    override func setupLayout() {
+        super.setupLayout()
         scrollView.snp.makeConstraints { make in
             make.top.bottom.equalTo(view.safeAreaLayoutGuide)
             make.leading.trailing.equalToSuperview()
