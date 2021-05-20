@@ -10,7 +10,8 @@ import UIKit
 final class PinCodeViewController: BaseViewController {
     
     var viewModel: PinCodeViewModel!
-    let imageView = UIImageView(image: UIImage(systemName: "lock"), contentMode: .scaleAspectFit)
+    private let imageView = UIImageView(image: UIImage(systemName: "lock"), contentMode: .scaleAspectFit, tintColor: .appBlackWhiteColor)
+    private let titleLabel = UILabel.makeLabel("Create your new PIN", font: appBoldFont(size: 16), color: .appBlackWhiteColor, textAligment: .center, numberOfLines: 1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +29,20 @@ final class PinCodeViewController: BaseViewController {
     }
     override func setupView() {
         super.setupView()
+        view.addSubviews(imageView, titleLabel)
     }
     override func setupLayout() {
         super.setupLayout()
+        imageView.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide).inset(appExtraLargePadding)
+            make.height.width.equalTo(appBtnHeight)
+            make.centerX.equalToSuperview()
+        }
+        
+        titleLabel.snp.makeConstraints { make in
+            make.top.equalTo(imageView.snp.bottom).inset(-appPadding)
+            make.leading.trailing.equalToSuperview().inset(appPadding)
+        }
+        
     }
 }

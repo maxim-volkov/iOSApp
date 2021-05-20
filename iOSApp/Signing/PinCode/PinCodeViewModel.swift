@@ -13,8 +13,9 @@ enum PinCodeType: Int {
 final class PinCodeViewModel {
     
     private let parentCoordinator: PinCodeCoordinator
-
-    init(coordinator: Coordinator, emailOrPhoneNumber: String) {
+    private(set) var title: String
+    init(coordinator: Coordinator, type: PinCodeType) {
         self.parentCoordinator = coordinator as! PinCodeCoordinator
+        title = "Create your new PIN"
     }
 }

@@ -20,7 +20,7 @@ final class AppCoordinator: Coordinator {
     }
     
     func start() {
-        SettingsManager.shared.user = .authenticated
+        SettingsManager.shared.user = .notAuthenticated
         switch SettingsManager.shared.user {
         case .authenticated:
             let tabBarCoordinator = TabBarCoordinator()

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1AC52F26264BAD9D00C04EA4 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC52F25264BAD9D00C04EA4 /* R.generated.swift */; };
+		B814952B26514B5F00E53511 /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B814952A26514B5F00E53511 /* PinView.swift */; };
 		B81521A7264E78BA00B498CA /* StoryPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81521A6264E78BA00B498CA /* StoryPreviewViewController.swift */; };
 		B81521A9264E78C400B498CA /* StoryPreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81521A8264E78C400B498CA /* StoryPreviewViewModel.swift */; };
 		B81521AB264E78CC00B498CA /* StoryPreviewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81521AA264E78CC00B498CA /* StoryPreviewCoordinator.swift */; };
@@ -89,6 +90,7 @@
 		1AC52F25264BAD9D00C04EA4 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		27BD7AFA66EAEE981A934464 /* Pods-iOSApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSApp.release.xcconfig"; path = "Target Support Files/Pods-iOSApp/Pods-iOSApp.release.xcconfig"; sourceTree = "<group>"; };
 		83F51E6CE991B03C5B3F371F /* Pods_iOSApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B814952A26514B5F00E53511 /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
 		B81521A6264E78BA00B498CA /* StoryPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPreviewViewController.swift; sourceTree = "<group>"; };
 		B81521A8264E78C400B498CA /* StoryPreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPreviewViewModel.swift; sourceTree = "<group>"; };
 		B81521AA264E78CC00B498CA /* StoryPreviewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPreviewCoordinator.swift; sourceTree = "<group>"; };
@@ -492,6 +494,7 @@
 				B8F70A652650F356007865F1 /* PinCodeCoordinator.swift */,
 				B8F70A672650F35F007865F1 /* PinCodeViewModel.swift */,
 				B8F70A692650F365007865F1 /* PinCodeViewController.swift */,
+				B814952A26514B5F00E53511 /* PinView.swift */,
 			);
 			path = PinCode;
 			sourceTree = "<group>";
@@ -681,6 +684,7 @@
 				B82F8BE4265043C10096358A /* UIScrollView+extensions.swift in Sources */,
 				B8789476264DB289004DEE04 /* HomeCollectionViewCell.swift in Sources */,
 				B864B4D6264AE2900056C356 /* SignInViewController.swift in Sources */,
+				B814952B26514B5F00E53511 /* PinView.swift in Sources */,
 				B878944F264D6011004DEE04 /* FavoriteViewModel.swift in Sources */,
 				B81521AF264E7A3700B498CA /* HomeCollectionCellViewModel.swift in Sources */,
 				B8789453264D6A38004DEE04 /* UIColor+extensions.swift in Sources */,

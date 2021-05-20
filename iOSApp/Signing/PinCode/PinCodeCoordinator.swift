@@ -20,7 +20,7 @@ final class PinCodeCoordinator: Coordinator {
     }
     func start(emailOrPhoneNumber: String) {
         let ctrl = PinCodeViewController()
-        let viewModel = PinCodeViewModel(coordinator: self, emailOrPhoneNumber: emailOrPhoneNumber)
+        let viewModel = PinCodeViewModel(coordinator: self, type: .create)
         ctrl.viewModel = viewModel
         navigationController.pushViewController(ctrl, animated: true)
     }
